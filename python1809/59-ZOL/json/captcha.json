@@ -1,0 +1,52 @@
+[
+	{
+		"img": "img/captcha/captcha1.png",
+		"id": 1,
+		"val":"6a576"
+	},
+	{
+		"img": "img/captcha/captcha2.png",
+		"id": 2,
+		"val":"d9269"
+	},
+	{
+		"img": "img/captcha/captcha3.png",
+		"id": 3,
+		"val":"8d51b"
+	},
+	{
+		"img": "img/captcha/captcha4.png",
+		"id": 4,
+		"val":"6basb"
+	},
+	{
+		"img": "img/captcha/captcha5.png",
+		"id": 5,
+		"val":"e114a"
+	},
+	{
+		"img": "img/captcha/captcha6.png",
+		"id": 6,
+		"val":"e4a75"
+	},
+	{
+		"img": "img/captcha/captcha7.png",
+		"id": 7,
+		"val":"a614b"
+	},
+	{
+		"img": "img/captcha/captcha8.png",
+		"id": 8,
+		"val":"9df32"
+	},
+	{
+		"img": "img/captcha/captcha9.png",
+		"id": 9,
+		"val":"56282"
+	},
+	{
+		"img": "img/captcha/captcha.png",
+		"id": 10,
+		"val":"559ea"
+	}
+]

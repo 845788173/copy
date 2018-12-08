@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block EXTCSS %}
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
+{% block title %}
+<title>{{ title }}</title>
+{% endblock %}
+
+
+{% block content %}
+  <div class="swiper-container" id="topSwiper">
+    <div class="swiper-wrapper">
+        {% for wheel in wheels %}
+            <div class="swiper-slide">
+                <img src="{{ wheel.img }}" alt="{{ wheel.name }}">
+            </div>
+        {% endfor %}
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+{% endblock %}
+
+
+{% block EXTJS %}
+    <script src="{% static 'home/js/home.js' %}"></script>
+{% endblock %}

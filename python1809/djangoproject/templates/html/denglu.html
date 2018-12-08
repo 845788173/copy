@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/css/denglu.css"/>
+		<script src="/static/js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js/denglu.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div">
+		<div class="top">
+			<p>
+			   <span>Hi,欢迎来到利群商城！</span>
+			   <a href="">请登录</a>
+			   <a href="../html/zhuce.html">免费注册</a>
+			</p>
+			<ul class="list">
+				<li>我的订单</li>
+				<li id="li1">会员中心</li>
+				<li id="li2">
+					客户服务
+					<ul id="list2">
+						<li id="lione">客户服务</li>
+						<li>帮助中心</li>
+						<li>售后服务</li>
+						<li>在线投诉</li>
+					</ul>
+				</li>
+				<li id="li3">手机利群</li>
+				<li id="li4">利群官网</li>
+				<li id="li5">关注利群：</li>
+				<li id="li6">
+					<img src="/static/img/tdcode.jpg" id="img1"/>
+					<img src="/static/img/qq.jpg"/>
+					<img src="/static/img/sina.jpg"/>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="logo">
+			<div id="log">
+				<a href="../html/zhuye.html"><img src="/static/img/logo.jpg"></a>
+				<img src="http://promotion.liqunshop.com/Promotion/headImg/3002.gif" class="fl">
+			</div>
+			<div class="search">				
+				<form action="" method="post">
+					<img src="/static/img/search.jpg" alt="" />
+					<input type="text" name="" id="sea" value="" />
+					<input type="submit" value="搜  索" id="sub"/>
+				</form>
+				<ul id="Hov">
+					<li>热门搜索：</li>
+					<li class="hover">iphone7大促</li>
+					<li class="hover">面膜7折起</li>
+					<li class="hover">贝亲五折</li>
+					<li class="hover">买就送晶露</li>
+					<li class="hover">朗信专场</li>
+				</ul>
+			</div>
+			<div class="go">
+				<img src="/static/img/go_cart.jpg" alt="" />
+				<img src="/static/img/hot_tel.jpg" alt="" />
+			</div>
+		</div>
+		<div>
+		<ul id="Lis">
+			<li id="shou">首页</li>
+			<li id="liqun">利群网商</li>
+			<li id="map">全球购</li>
+			<li>生鲜</li>
+			<li>超市</li>
+			<li>母婴馆</li>
+			<li>利群团</li>
+			<li>医药积分</li>
+			<li>商城</li>
+			<li id="last"><img src="http://image.liqunshop.com/static/www/images/head/hongbao.jpg"></li>
+		</ul>			
+		</div>		
+		</div>
+		<div class="concent">
+			<div class="logo">
+				<img src="/static/img/boglogo.jpg" />
+			</div>	
+			
+			<div class="form">
+				<div class="formbox">
+					<div style="display:block; width:285px; height:27px;">
+						<h1 style="float:left; position:relative; text-align:left; color:#666; font-size: 20px ">商城会员</h1>
+						<div style="float:right;font-size:14px;margin-top: 4px;">
+							<img src="/static/img/right.jpg" alt="" style="width:16px; height:16px;display: block;float: left;margin-right: 4px;"/>
+							<a href="../html/zhuce.html">立即注册</a>
+						</div>
+					</div>
+					<div class="tishi">
+					    <img src="/static/img/Warning.jpg" alt=""style="" />
+					    <span>  账户名与密码不匹配，请重新输入</span>
+				   </div>	
+					<form action="{% url 'liqun:login' %}" method="post">
+                        {% csrf_token %}
+						<div class="itemd">
+							<span><img src="/static/img/QQ图片20160930163558.png" alt="" /></span>
+							<input type="text" id="username" name="username" placeholder="邮箱/用户名/已验证手机" />
+						</div>
+						<div class="itemd">
+					         <span><img src="/static/img/QQ图片20160930163629.png" alt="" /></span>
+							<input type="password" name="password" id="pass" />
+						</div>
+						<div class="itemd" style="border: none;display: none;">
+							<input type="text" id="yzm" />
+							<input type="text" id="yzmim" />
+							<a href="../html/denglu.html"  id="huan">看不清楚换一张</a>
+						</div>
+						<div class="itemd"style="width: 285px;height: 15px;border: none;">
+							<a href="" id="forget">忘记密码？</a>
+						</div>
+						<div class="itemd"style="border: none;">
+							<input type="submit" value="登录" id="denglu"/>
+						</div>
+					</form>
+					<div class="Log">
+						<h5>快捷登录：</h5>
+						<span id="zfb">支付宝</span>
+						<span id="qq">QQ</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Foot">
+			<div class="FootTop">
+				<ul>
+					<li class="Top">购物指南</li>
+					<li>购物流程</li>
+					<li>会员介绍</li>
+					<li>发票制度</li>
+					<li>积分政策</li>
+					<li>常见问题</li>
+				</ul>
+				<ul>
+					<li class="Top">配送方式</li>
+					<li>自提服务</li>
+					<li>送货上门</li>
+					<li>配送范围及时间</li>
+					<li>全球购配送说明</li>
+				</ul>
+				<ul>
+					<li class="Top">支付方式</li>
+					<li>线上支付</li>
+					<li>货到付款</li>
+					<li>利群金卡支付</li>
+					<li>礼品卡支付</li>
+				</ul>
+				<ul>
+					<li class="Top">售后服务</li>
+					<li>退换货政策</li>
+					<li>退款说明</li>
+					<li>品牌售后服务电话</li>
+					<li>投诉与建议</li>
+				</ul>
+				<ul>
+					<li class="Top">商家服务</li>
+					<li>商家入驻</li>
+					<li>商家管理规定</li>
+					<li>商家中心</li>
+				</ul>
+				<ul>
+					<li class="Top">利群商城订阅号</li>
+					<li>
+						<img src="/static/img/foot-ewm1.jpg" alt="" />
+					</li>
+				</ul>
+				<ul>
+					<li class="Top">利群商城服务号</li>
+					<li>
+						<img src="/static/img/foot-ewm2.jpg" alt="" />
+					</li>
+				</ul>
+			</div>
+			<div class="FootBott">
+					<img src="/static/img/foot_bg.jpg" alt="" />
+			</div>
+			<div class="FootRAM">
+				<div class="Footroll">
+					<ul class="footmin">
+						<li>关于我们</li>
+						<li>联系我们</li>
+						<li>诚聘英才</li>
+						<li>手机利群</li>
+						<li>销售联盟</li>
+						<li>友情连接</li>
+						<li>网站合作</li>
+						<li>帮助中心</li>
+						<li class="rolllast">版权说明</li>
+					</ul>
+					<ul class="footbig">
+						<li>利群集团</li>
+						<li>百货集团</li>
+						<li>利群网</li>
+						<li>利群酒店</li>
+						<li>利群房地产</li>
+						<li>利群旅行社</li>
+						<li>利群药品</li>
+						<li>利群影城</li>
+						<li>利群水站</li>
+						<li class="rolllast">利群家政</li>
+					</ul>
+					<p>鲁ICP证09054331号-2 Copyright©2004-2015 利群集团青岛电子商务有限公司 版权所有</p>
+				</div>
+				<div class="Footwar">
+					<div class="Footwarimg">
+						<img src="/static/img/tip_pic1.jpg" alt=""  style="margin-left: 0px;"/>
+						<img src="/static/img/tip_pic2.jpg" alt="" />
+						<img src="/static/img/tip_pic3.jpg" alt="" />
+						<img src="/static/img/tip_pic4.jpg" alt="" />
+					</div>
+					
+			    </div>
+			</div>    
+		</div>
+	</body>
+</html>

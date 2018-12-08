@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img src="{{ url_for('static' ,filename='img/ji.jpj') }}" alt="">
+{% macro hello() %}
+    <p></p>
+    <p></p>
+{% endmacro %}
+
+{{ hello() }}
+{{ hello() }}
+{% from 'index.html' import hello %}
+{% for foo in hello %}
+    {% if loop.first %}
+     <h3></h3>
+    {% if loop.last %}
+    <h4></h4>
+    {% else %}
+    {% loop.index %},{{ create_goods(goods.name,goods.icon) }}
+{% endfor %}
+
+{{ hello() }}
+{% block css %}
+    {{ super }}
+    <h3>xiedongxi</h3>
+
+{% endblock %}
+{% include 'index.html' %}
+{% macro create_goods(name,icon) %}
+    <div class="" style="border: red 1px solid;margin:5px;padding: 5px;">
+    {{ name }}, xacd{{ icon }}
+
+    </div>
+{% endmacro %}
+</body>
+</html>

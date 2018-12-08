@@ -1,0 +1,2872 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/css/zhuye.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/swiper.min.css"/>
+    <script src="/static/js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/zhuye.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/zhuye2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/floor.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div style="border-bottom: 2px solid #C81622;">
+    <div class="top">
+        <p>
+            <span id="hi">Hi，</span>
+            <span id="us"></span>
+            <span>欢迎来到利群商城！</span>
+            {% if username %}
+                <a href="#">{{ username }}</a>
+            {% else %}
+                <a href="/liqun/login/">请登录</a>
+            {% endif %}
+            <a href="/liqun/register/">免费注册</a>
+        </p>
+        <ul class="list">
+            <li>我的订单</li>
+            <li id="li1">会员中心</li>
+            <li id="li2">
+                客户服务
+                <ul id="list2">
+                    <li id="lione">客户服务</li>
+                    <li>帮助中心</li>
+                    <li>售后服务</li>
+                    <li>在线投诉</li>
+                </ul>
+            </li>
+            <li id="li3">手机利群</li>
+            <li id="li4">利群官网</li>
+            <li id="li5">关注利群：</li>
+            <li id="li6">
+                <img src="/static/img/tdcode.jpg" id="img1"/>
+                <img src="/static/img/qq.jpg"/>
+                <img src="/static/img/sina.jpg"/>
+            </li>
+        </ul>
+
+    </div>
+    <div class="logo">
+        <div id="log">
+            <img src="/static/img/logo.jpg">
+            <img src="http://promotion.liqunshop.com/Promotion/headImg/3002.gif" class="fl">
+        </div>
+        <div class="search">
+            <form action="" method="post">
+                <img src="/static/img/search.jpg" alt=""/>
+                <input type="text" name="" id="sea" value=""/>
+                <input type="submit" value="搜  索" id="sub"/>
+            </form>
+            <ul id="Hov">
+                <li>热门搜索：</li>
+                <li class="hover">iphone7大促</li>
+                <li class="hover">面膜7折起</li>
+                <li class="hover">贝亲五折</li>
+                <li class="hover">买就送晶露</li>
+                <li class="hover">朗信专场</li>
+            </ul>
+        </div>
+        <div class="go">
+            <a href="/html/gouwuche.html"><img src="/static/img/go_cart.jpg" alt=""/></a>
+            <img src="/static/img/hot_tel.jpg" alt=""/>
+        </div>
+    </div>
+    <div>
+        <ul id="Lis">
+            <li id="shou">首页</li>
+            <li id="liqun">利群网商</li>
+            <li id="map">全球购</li>
+            <li>生鲜</li>
+            <li>超市</li>
+            <li>母婴馆</li>
+            <li>利群团</li>
+            <li>医药积分</li>
+            <li>商城</li>
+            <li id="last"><img src="http://image.liqunshop.com/static/www/images/head/hongbao.jpg"></li>
+        </ul>
+    </div>
+</div>
+<div class="concent">
+    <div class="Cone">
+        <div class="lieb">
+            <div id="Top">
+                全部商品分类
+            </div>
+            <ul id="list">
+                <li>
+                    <div class="title">
+                        <img src="/static/img/QQ图片20160927090424.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">全球购</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">母婴</a>
+                            <a href="">食品保健</a>
+                            <a href="">美妆</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbsp.jpg" alt=""/>
+                                    <a href="" class="A">食品保健</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">进口食品</a>
+                                    <a href="">基础保健</a>
+                                    <a href="">功能保健</a>
+                                    <a href="">利群全球购</a>
+                                    <a href="">轻松购全球</a
+                                </div>
+                            </div>
+                            <div class="third-tit">
+                                <div class="brand-tit" style="margin-left: 2px;">
+                                    品牌
+                                </div>
+                                <div class="brand-area">
+                                    <a href="">woohoo natural </a>
+                                    <a href="">NeoCell</a>
+                                    <a href="">Twinlab</a>
+                                    <a href="">Cal-Quick</a>
+                                    <a href="">Nature’s care</a>
+                                    <a href="">佳思敏</a>
+                                    <a href="">Swisse</a>
+                                    <a href="">澳佳宝</a>
+                                    <a href="">Doppelherz</a>
+                                    <a href="">Caudalie</a>
+                                    <a href="">健安喜</a>
+                                    <a href=""> Murad</a>
+                                    <a href="">Nature</a>
+                                    <a href="">Made</a>
+                                    <a href="">诺奥</a>
+                                    <a href="">`BioAstin</a>
+                                    <a href="">Puritan‘s</a>
+                                    <a href=""> Pride</a>
+                                    <a href="">安利</a>
+                                    <a href="">自然之宝</a>
+                                    <a href="">山本汉方</a>
+                                    <a href=""> 地球妈妈</a>
+                                    <a href="">metabolic</a>
+                                    <a href="">生酵素222</a>
+                                    <a href="">NAUTICA</a>
+                                    <a href="">FANCL</a>
+                                    <a href="">FUKAMI</a>
+                                    <a href="">graphico</a>
+                                    <a href="">新谷酵素</a>
+                                    <a href="">美溢</a>
+                                    <a href="">德运</a>
+                                    <a href="">格力高</a>
+                                    <a href="">卡乐比</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="second-class">
+                            <div class="first-tit">
+                                <img src="/static/img/icon_gbmz.jpg" alt=""/>
+                                <a href="" class="A">美妆个护</a>
+                                <a href="" class="B">更多 ></a>
+                            </div>
+                            <div class="second-tit">
+                                <a href="">个人护理</a>
+                                <a href="">口腔护理</a>
+                                <a href="">靓丽彩妆</a>
+                                <a href="">面部护肤</a>
+                                <a href="">身体护理</a>
+                                <a href="">美容工具</a>
+                            </div>
+                            <div class="third-tit">
+                                <div class="brand-tit" style="margin-left: 2px;">
+                                    品牌
+                                </div>
+                                <div class="brand-area">
+                                    <a href="">春雨面膜</a>
+                                    <a href="">可莱丝</a>
+                                    <a href="">贵妇眼膜</a>
+                                    <a href="">九朵云</a>
+                                    <a href="">雪花秀</a>
+                                    <a href="">悦诗风吟</a>
+                                    <a href="">it＇s skin</a>
+                                    <a href="">无印良品</a>
+                                    <a href="">SANA/莎娜</a>
+                                    <a href="">LOSHI/北海道</a>
+                                    <a href="">高丝</a>
+                                    <a href="">Kanebo/嘉娜宝</a>
+                                    <a href="">牛牌</a>
+                                    <a href="">DHC</a>
+                                    <a href="">资生堂</a>
+                                    <a href="">丝蓓绮</a>
+                                    <a href="">boots</a>
+                                    <a href="">谜尚</a>
+                                    <a href="">小青猪</a>
+                                    <a href="">SNP</a>
+                                    <a href="">兰芝</a>
+                                    <a href="">贝德玛</a>
+                                    <a href="">珂莱欧</a>
+                                    <a href="">the face shop</a>
+                                    <a href="">爱茉莉</a>
+                                    <a href="">IOPE/亦博雅漾</a>
+                                    <a href="">Lucas</a>
+                                    <a href="">狮王</a>
+                                    <a href="">贵爱娘</a>
+                                    <a href="">LG</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <img src="/static/img/QQ图片20160927090902.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">民生食品</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">粮油调味</a>
+                            <a href="">生鲜</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_oil.jpg" alt=""/>
+                                    <a href="" class="A">粮食调味</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit" style="margin-bottom: 3px;">
+                                    <a href="">大米</a>
+                                    <a href="">面粉</a>
+                                    <a href="">挂面</a>
+                                    <a href="">杂粮</a>
+                                    <a href="">食用油</a>
+                                    <a href="">橄榄油</a>
+                                    <a href="">南北干货</a>
+                                    <a href="">厨房调味</a>
+                                    <a href="">方便速食</a>
+                                    <a href="">罐头</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">品品好禾 </a>
+                                        <a href="">维良</a>
+                                        <a href="">鲁花</a>
+                                        <a href="">巧媳妇</a>
+                                        <a href="">味好美</a>
+                                        <a href="">海天</a>
+                                        <a href="">丝宝宝</a>
+                                        <a href="">五谷道场</a>
+                                        <a href="">福临门</a>
+                                        <a href="">长生</a>
+                                        <a href="">康师傅</a>
+                                        <a href="">百乐麦</a>
+                                        <a href="">欣和</a>
+                                        <a href="">吉香居</a>
+                                        <a href="">长寿花</a>
+                                        <a href="">金龙鱼</a>
+                                        <a href="">信中</a>
+                                        <a href="">娃哈哈</a>
+                                        <a href="">利是</a>
+                                        <a href="">乐芷</a>
+                                        <a href="">卡斯塔多</a>
+                                        <a href="">乐禧</a>
+                                        <a href="">福五星</a>
+                                        <a href="">湖甸</a>
+                                        <a href="">瑞食尚</a>
+                                        <a href="">寒地沼泽</a>
+                                        <a href="">贝润云汇</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_rock.jpg" alt=""/>
+                                    <a href="" class="A">地方特产</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">青岛特产</a>
+                                    <a href="">新疆特产</a>
+                                    <a href="">济南特产</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">鑫复盛 </a>
+                                        <a href="">鹏程</a>
+                                        <a href="">鱼专家</a>
+                                        <a href="">圣果源</a>
+                                        <a href="">佛桃</a>
+                                        <a href="">俞记山</a>
+                                        <a href="">前江</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_fish.jpg" alt=""/>
+                                    <a href="" class="A">生鲜食品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">水果</a>
+                                    <a href="">蔬菜</a>
+                                    <a href="">水产</a>
+                                    <a href="">鲜肉/熟食</a>
+                                    <a href="">禽/蛋</a>
+                                    <a href="">低温奶</a>
+                                    <a href="">低温肠</a>
+                                    <a href="">月饼</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">琴牌 </a>
+                                        <a href="">光明</a>
+                                        <a href="">喜旺</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">鲁翠</a>
+                                        <a href="">伊势</a>
+                                        <a href="">得益</a>
+                                        <a href="">多美鲜</a>
+                                        <a href="">西北人家</a>
+                                        <a href="">南纬37°</a>
+                                        <a href="">澳洲牛肉</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="title">
+                        <img src="/static/img/QQ图片20160927091631.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">零食酒水</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">休闲零食</a>
+                            <a href="">饮料</a>
+                            <a href="">酒</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_beer.jpg" alt=""/>
+                                    <a href="" class="A">酒</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">白酒</a>
+                                    <a href="">啤酒</a>
+                                    <a href="">黄酒</a>
+                                    <a href="">葡萄酒</a>
+                                    <a href="">洋酒</a>
+                                    <a href="">保健酒</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">茅台 </a>
+                                        <a href="">五粮液</a>
+                                        <a href="">金六福</a>
+                                        <a href="">郎酒</a>
+                                        <a href="">琅琊台</a>
+                                        <a href="">泸州</a>
+                                        <a href="">青岛啤酒</a>
+                                        <a href="">红星</a>
+                                        <a href="">张裕</a>
+                                        <a href="">绵竹</a>
+                                        <a href="">即墨老酒</a>
+                                        <a href="">牛栏山</a>
+                                        <a href="">宁夏红</a>
+                                        <a href="">卓维浓</a>
+                                        <a href="">Malina（玛丽）</a>
+                                        <a href="">景芝</a>
+                                        <a href="">如意郎</a>
+                                        <a href="">永定河</a>
+                                        <a href="">女儿红</a>
+                                        <a href="">LACANOSA</a>
+                                        <a href="">新华门</a>
+                                        <a href="">汾酒</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_fruit.jpg" alt=""/>
+                                    <a href="" class="A">饮料</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="">水</a>
+                                    <a href="">果汁</a>
+                                    <a href="">茶</a>
+                                    <a href="">饮料</a>
+                                    <a href="">咖啡</a>
+                                    <a href="">碳酸饮料</a>
+                                    <a href="">功能饮料</a>
+                                    <a href="">奶</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="">蒙牛</a>
+                                            <a href="">汇源</a>
+                                            <a href="">统一</a>
+                                            <a href="">红牛</a>
+                                            <a href="">康师傅</a>
+                                            <a href="">崂山</a>
+                                            <a href="">农夫果园</a>
+                                            <a href="">伊利</a>
+                                            <a href="">可口可乐</a>
+                                            <a href=""> 崂翠矿泉水</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_suger.jpg" alt=""/>
+                                    <a href="" class="A">休闲零食</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">饼干</a>
+                                    <a href="">糕点</a>
+                                    <a href="">糖果</a>
+                                    <a href="">巧克力</a>
+                                    <a href="">果冻</a>
+                                    <a href="">坚果</a>
+                                    <a href="">肉脯肉干</a>
+                                    <a href="">膨化</a>
+                                    <a href="">小食</a>
+                                    <a href="">枣</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">好丽友 </a>
+                                        <a href="">德芙</a>
+                                        <a href="">益达</a>
+                                        <a href="">上好佳</a>
+                                        <a href="">乐事</a>
+                                        <a href="">米老头</a>
+                                        <a href="">阿尔卑斯</a>
+                                        <a href="">达利</a>
+                                        <a href="">喜之郎</a>
+                                        <a href="">企强</a>
+                                        <a href="">品品人生</a>
+                                        <a href="">卡夫</a>
+                                        <a href="">贝脆思</a>
+                                        <a href="">老三东</a>
+                                        <a href="">青松客</a>
+                                        <a href="">鲜引力</a>
+                                        <a href="">RIO</a>
+                                        <a href="">清嘴</a>
+                                        <a href="">渔米之湘</a>
+                                        <a href="">妙克力</a>
+                                        <a href="">眼睛渴了</a>
+                                        <a href="">思味特</a>
+                                        <a href="">京都念慈</a>
+                                        <a href="">百草味</a>
+                                        <a href="">康师傅</a>
+                                        <a href="">母亲</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_milk.jpg" alt=""/>
+                                    <a href="" class="A">冲饮</a>
+                                    <a href="" class="B" ;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="">麦片</a>
+                                    <a href="">奶粉</a>
+                                    <a href="">糊粉</a>
+                                    <a href="">咖啡粉</a>
+                                    <a href="">果珍茶</a>
+                                    <a href="">奶茶</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="">崂乡</a>
+                                            <a href="">雀巢</a>
+                                            <a href="">立顿</a>
+                                            <a href="">南方</a>
+                                            <a href="">忆江南</a>
+                                            <a href="">永和</a>
+                                            <a href="">西麦</a>
+                                            <a href="">知福</a>
+                                            <a href="">固本堂</a>
+                                            <a href="">御青</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbsp.jpg" alt=""/>
+                                    <a href="" class="A">营养保健</a>
+                                    <a href="" class="B" ;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="">传统滋补</a>
+                                    <a href="">调养保健</a>
+                                    <a href="">蜂蜜</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="">固本堂 </a>
+                                            <a href="">贝润云汇</a>
+                                            <a href="">东阿</a>
+                                            <a href="">王凯</a>
+                                            <a href="">嗡嗡乐</a>
+                                            <a href="">百花</a>
+                                            <a href="">蒂芬妮</a>
+                                            <a href="">一生康安</a>
+                                            <a href="">东阿人家</a>
+                                            <a href="">五星湖</a>
+                                            <a href="">新广元</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="title">
+                        <img src="/static/img/QQ图片20160927091109.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">美妆洗护</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">洗护</a>
+                            <a href="">面部护理</a>
+                            <a href="">彩妆</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_tooth.jpg" alt=""/>
+                                    <a href="" class="A">个人洗护</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">洗发</a>
+                                    <a href="">护发</a>
+                                    <a href="">洗护套装</a>
+                                    <a href="">染发</a>
+                                    <a href="">烫发</a>
+                                    <a href="">头发造型</a>
+                                    <a href="">沐浴露</a>
+                                    <a href="">香皂</a>
+                                    <a href="">洗手液</a>
+                                    <a href="">牙膏/牙粉</a>
+                                    <a href="">牙刷/牙线</a>
+                                    <a href="">漱口水</a>
+                                    <a href="">卫生巾</a>
+                                    <a href="">洗液护垫</a>
+                                    <a href="">润肤露</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">欧莱雅</a>
+                                        <a href="">ABC</a>
+                                        <a href="">海飞丝</a>
+                                        <a href="">潘婷</a>
+                                        <a href="">佳洁士</a>
+                                        <a href="">沙宣</a>
+                                        <a href="">苏菲</a>
+                                        <a href="">云南白药</a>
+                                        <a href="">护舒宝</a>
+                                        <a href="">狮王</a>
+                                        <a href="">多芬</a>
+                                        <a href="">舒肤佳</a>
+                                        <a href="">温雅</a>
+                                        <a href="">LG</a>
+                                        <a href="">力士</a>
+                                        <a href="">中华</a>
+                                        <a href="">美涛</a>
+                                        <a href="">资生堂</a>
+                                        <a href="">施华蔻 </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">身体乳</a>
+                                    <a href="">护手</a>
+                                    <a href="">脱毛膏</a>
+                                    <a href="">止汗</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">薇婷 </a>
+                                            <a href="">百雀羚</a>
+                                            <a href="">阿迪达斯</a>
+                                            <a href="">妮维雅</a>
+                                            <a href="">隆力奇</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_face.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">乳液/面霜</a>
+                                    <a href="">化妆水</a>
+                                    <a href="">面部精华</a>
+                                    <a href="">眼部护理</a>
+                                    <a href="">洁面</a>
+                                    <a href="">面膜</a>
+                                    <a href="">面部护理套装</a>
+                                    <a href="">面部去角质</a>
+                                    <a href="">敏感修护</a>
+                                    <a href="">防晒</a>
+
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">海蓝之谜 </a>
+                                        <a href="">雅诗兰黛</a>
+                                        <a href="">倩碧</a>
+                                        <a href="">兰蔻</a>
+                                        <a href="">迪奥</a>
+                                        <a href="">欧莱雅</a>
+                                        <a href="">玉兰油</a>
+                                        <a href="">梦妆</a>
+                                        <a href="">羽西</a>
+                                        <a href="">佰草集</a>
+                                        <a href="">薇姿</a>
+                                        <a href="">理肤泉</a>
+                                        <a href="">碧欧泉</a>
+                                        <a href="">资生堂</a>
+                                        <a href="">芙丽芳丝</a>
+                                        <a href="">温碧泉</a>
+                                        <a href="">百雀羚</a>
+                                        <a href="">相宜本草</a>
+                                        <a href="">Za</a>
+                                        <a href="">昭贵</a>
+                                        <a href="">本草訫语</a>
+                                        <a href="">海洋丽姿</a>
+                                        <a href="">NURY芦丽</a>
+                                        <a href="">欧珀莱</a>
+                                        <a href="">兰芝</a>
+                                        <a href="">高丝</a>
+                                        <a href="">美即</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" ;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" style="color: #535154;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="title">
+                        <img src="/static/img/QQ图片20160927091147.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">日用百货</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">生活用纸</a>
+                            <a href="">清洁</a>
+                            <a href="">居家</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" ;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" style="color: #535154;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="title">
+                        <img src="/static/img/QQ图片20160927091222.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">母婴玩具</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">奶粉</a>
+                            <a href="">尿裤</a>
+                            <a href="">洗护</a>
+                            <a href="">喂养</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="../img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" ;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" style="color: #535154;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="title">
+                        <img src="/static/img/QQ图片20160927091240.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">手机数码</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">手机</a>
+                            <a href="">电脑</a>
+                            <a href="">相机</a>
+                            <a href="">办公</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" ;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" style="color: #535154;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="title">
+                        <img src="../img/QQ图片20160927091339.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">家用电器</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">大家电</a>
+                            <a href="">小家电</a>
+                            <a href="">热水器</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" ;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" style="color: #535154;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="title">
+                        <img src="/static/img/QQ图片20160927091402.png" alt=""/>
+                        <div class="titop">
+                            <span class="le">虚拟服务</span>
+                            <span class="ri">></span>
+                        </div>
+                        <div class="tibott">
+                            <a href="">便民缴费</a>
+                            <a href="">旅游</a>
+                            <a href="">图书</a>
+                        </div>
+                    </div>
+                    <div class="header-pop">
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B" style="color: red !important;">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" ;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <div class="second-class">
+                                <div class="first-tit">
+                                    <img src="/static/img/icon_gbmy.jpg" alt=""/>
+                                    <a href="" class="A">母婴用品</a>
+                                    <a href="" class="B">更多 ></a>
+                                </div>
+                                <div class="second-tit">
+                                    <a href="">奶粉</a>
+                                    <a href="">营养辅食</a>
+                                    <a href="">尿裤湿巾</a>
+                                    <a href="">喂养用品</a>
+                                    <a href="">孕产妇专区</a>
+                                    <a href="">洗护用品</a>
+                                    <a href="">车床玩具</a>
+                                </div>
+                                <div class="third-tit">
+                                    <div class="brand-tit" style="margin-left: 2px;">
+                                        品牌
+                                    </div>
+                                    <div class="brand-area">
+                                        <a href="">爱他美 </a>
+                                        <a href="">A2 Platinum</a>
+                                        <a href="">Karicare</a>
+                                        <a href="">惠氏</a>
+                                        <a href="">Nutrilon</a>
+                                        <a href="">贝拉米</a>
+                                        <a href="">泓乐</a>
+                                        <a href="">特福芬</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">Friso</a>
+                                        <a href="">美赞臣</a>
+                                        <a href="">Nature’s care</a>
+                                        <a href="">Ddrops</a>
+                                        <a href="">童年时光</a>
+                                        <a href="">小熊糖</a>
+                                        <a href="">世界最好</a>
+                                        <a href="">Nordic Naturals</a>
+                                        <a href="">嘉宝</a>
+                                        <a href="">禧贝</a>
+                                        <a href="">喜宝</a>
+                                        <a href="">大王</a>
+                                        <a href="">花王</a>
+                                        <a href="">尤妮佳</a>
+                                        <a href="">麦肯齐</a>
+                                        <a href="">艾维诺</a>
+                                        <a href="">施巴</a>
+                                        <a href="">加州宝宝</a>
+                                        <a href="">福喜儿</a>
+                                        <a href="">Martek</a>
+                                        <a href="">Lansinoh</a>
+                                        <a href="">帕玛氏</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-class">
+                                <div class="second-tit">
+                                    <img src="/static/img/icon_jjry.jpg" alt=""/>
+                                    <a href="" class="A">家居日用</a>
+                                    <a href="" class="B" style="color: #535154;">更多 ></a>
+                                </div>
+                                <div class="second-tit2">
+                                    <a href="" style="color: #6b6b6b;margin-left: 2px;">生活日用</a>
+                                </div>
+                                <div class="second-tit3">
+                                    <div class="third-tit">
+                                        <div class="brand-tit">
+                                            品牌
+                                        </div>
+                                        <div class="brand-area">
+                                            <a href="" style="margin-left: -3px;">膳魔师 </a>
+                                            <a href="">象印</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="tu">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {% for img in imgs %}
+                        <div class="swiper-slide" style="background-image:url({{ img.img }})"></div>
+                    {% endfor %}
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="mess">
+            <div class="messtop">
+                <img src="http://image.liqunshop.com/static/www/images/index/flash_info_top.jpg" class="lazy"
+                     data-src="http://image.liqunshop.com/static/www/images/index/flash_info_top.jpg">
+                <div id="tit">
+                    利群快报
+                </div>
+                <div>
+                    <ul>
+                        <li id="new"> “积分签到”功能能停止使用公告</li>
+                        <li id="red">新老会员领红包</li>
+                        <li>小零食国庆放“价” 低至五折</li>
+                        <li>秋季养生 全球好货5折起</li>
+                        <li>朗信专场 全场低至799元起</li>
+                        <li>iPhone7 火爆抢购</li>
+                        <li>无限挚爱 贝亲全场低至5折</li>
+                        <li>唤醒颜值 买就送/满就赠</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="messbott">
+                <ul id="xiao">
+                    <li>•</li>
+                    <li>•</li>
+                    <li>•</li>
+                </ul>
+                <ul id="xiao2">
+                    <li><img src="/static/img/xiao1.jpg" alt=""/></li>
+                    <li><img src="/static/img/xiao2.jpg" alt=""/></li>
+                    <li><img src="/static/img/xiao3.jpg" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lunimg">
+    <div class="proma">
+        <img src="http://image.liqunshop.com/upload/NewUploadFile/201609/DA/201609011533243246.gif" class="lazy"
+             data-src="http://image.liqunshop.com/upload/NewUploadFile/201609/DA/201609011533243246.gif">
+    </div>
+    <div class="promarea">
+        <ul id="Bigarea">
+            <li><img src="/static/img/201608221607015823.jpg" alt=""/></li>
+            <li><img src="/static/img/201608250919334300.jpg" alt=""/></li>
+            <li><img src="/static/img/201608271039431505.jpg" alt=""/></li>
+            <li><img src="/static/img/201608310947167577.jpg" alt=""/></li>
+            <li><img src="/static/img/201609050847406442.jpg" alt=""/></li>
+            <li><img src="/static/img/201609121018146376.jpg"/></li>
+            <li><img src="/static/img/201609140902327881.jpg" alt=""/></li>
+            <li><img src="/static/img/201609160903297160.jpg" alt=""/></li>
+            <li><img src="/static/img/201609180917356734.jpg" alt=""/></li>
+            <li><img src="/static/img/201609211018484572.jpg" alt=""/></li>
+            <li><img src="/static/img/201609211144385042.jpg" alt=""/></li>
+            <li><img src="/static/img/201609050847406442.jpg" alt=""/></li>
+        </ul>
+        <div id="prev"> <</div>
+        <div id="next"> ></div>
+    </div>
+</div>
+<div class="floor">
+    <div class="floorleft">
+        <div class="floorL">
+            <div class="floorimg">
+                <img src="/static/img/floor1f.jpg" alt=""/>
+            </div>
+            <div class="floorinfo">
+                <ul>
+                    <li>食用油</li>
+                    <li>大米</li>
+                    <li>面粉</li>
+                    <li>挂面</li>
+                    <li>厨房调味</li>
+                    <li>白酒</li>
+                    <li>啤酒</li>
+                    <li>水</li>
+                    <li>麦片</li>
+                    <li>饼干糕点</li>
+                    <li>蔬菜</li>
+                    <li>洗衣液</li>
+                    <li>卷纸</li>
+                    <li>抽纸</li>
+                </ul>
+                <div class="Lunfla">
+                    <ul id="BIgfla">
+                        <li><img src="/static/img/xioafloor1.jpg" alt=""/></li>
+                    </ul>
+                    <ul id="SMALLfla">
+                        <li>•</li>
+                        <li>•</li>
+                        <li>•</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floorF">
+            <ul class="bigFlash">
+                <li><img src="/static/img/Flash1.jpg" alt=""/></li>
+                <li><img src="/static/img/Flash2.jpg" alt=""/></li>
+                <li><img src="/static/img/Flash3.jpg" alt=""/></li>
+            </ul>
+            <ul class="smaFlash">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="floorright">
+        <div class="floorTop">
+            <ul>
+                <li>精选特卖<span class="jiao" style="display: block;"></span></li>
+                <li>粮油生鲜<span class="jiao"></span></li>
+                <li>零食酒水<span class="jiao"></span></li>
+                <li>纸品湿巾<span class="jiao"></span></li>
+                <li>清洁用品<span class="jiao"></span></li>
+            </ul>
+        </div>
+        <div class="floorBot">
+            <div class="floorHuo">
+                {% for img1 in imgs1 %}
+
+                    <div class="floor_pro">
+                        <a href="{% url 'liqun:spxq_param' img1.id %}">
+                            <img src="{{ img1.g_img }}" alt="" />
+                            <div class="concent">{{ img1.g_concent }}</div>
+                            <div class="price">{{ img1.g_price }}</div>
+                        </a>
+                    </div>
+                {% endfor %}
+
+            </div>
+            <div class="floorIm">
+                <ul>
+                    <li><img src="/static/img/Img1.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img2.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img3.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img4.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img5.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img6.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img7.jpg" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="floor">
+    <div class="floorleft">
+        <div class="floorL">
+            <div class="floorimg">
+                <img src="/static/img/floor2f.jpg" alt=""/>
+            </div>
+            <div class="floorinfo">
+                <ul>
+                    <li>防晒</li>
+                    <li>化妆水</li>
+                    <li>护肤套装</li>
+                    <li>洁面</li>
+                    <li>洗发水</li>
+                    <li>沐浴露</li>
+                    <li>卫生巾</li>
+                    <li>香皂</li>
+                    <li>面膜</li>
+                    <li>牙膏</li>
+                    <li>BB霜</li>
+                    <li>睫毛膏</li>
+                    <li>男士护理</li>
+                    <li>香氛精油</li>
+                </ul>
+                <div class="Lunfla">
+                    <ul id="BIgfla">
+                        <li><img src="/static/img/xiaofloor2.jpg" alt=""/></li>
+                    </ul>
+                    <ul id="SMALLfla">
+                        <li>•</li>
+                        <li>•</li>
+                        <li>•</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floorF">
+            <ul class="bigFlash">
+                <li><img src="/static/img/Flash4.jpg" alt=""/></li>
+                <li><img src="/static/img/Flash5.jpg" alt=""/></li>
+                <li><img src="/static/img/Flash6.jpg" alt=""/></li>
+            </ul>
+            <ul class="smaFlash">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="floorright">
+        <div class="floorTop">
+            <ul>
+                <li>精选特卖<span class="jiao" style="display: block;"></span></li>
+                <li>面部护理<span class="jiao"></span></li>
+                <li>个人护理<span class="jiao"></span></li>
+                <li>香氛彩妆<span class="jiao"></span></li>
+                <li>男士护理<span class="jiao"></span></li>
+            </ul>
+        </div>
+        <div class="floorBot">
+            <div class="floorHuo">
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+
+            </div>
+            <div class="floorIm">
+                <ul>
+                    <li><img src="/static/img/Img8.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img9.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img10.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img11.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img12.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img13.jpg" alt=""/></li>
+                    <li><img src="/static/img/Img14.jpg" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="floor">
+    <div class="floorleft">
+        <div class="floorL">
+            <div class="floorimg">
+                <img src="/static/img/floor3f.jpg" alt=""/>
+            </div>
+            <div class="floorinfo">
+                <ul>
+                    <li>生活用纸</li>
+                    <li>洗衣液</li>
+                    <li>驱虫驱蚊</li>
+                    <li>收纳/衣架</li>
+                    <li>一次性用品</li>
+                    <li>烹饪锅具</li>
+                    <li>厨房清洁</li>
+                    <li>刀具菜板</li>
+                    <li>洗衣粉</li>
+                    <li>洗衣皂</li>
+                    <li>计生用品</li>
+                    <li>汽车用品</li>
+                    <li>拖把/扫把</li>
+                    <li>拖鞋</li>
+                </ul>
+                <div class="Lunfla">
+                    <ul id="BIgfla">
+                        <li><img src="/static/img/xiaofloor3.jpg" alt=""/></li>
+                    </ul>
+                    <ul id="SMALLfla">
+                        <li>•</li>
+                        <li>•</li>
+                        <li>•</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floorF">
+            <ul class="bigFlash">
+                <li><img src="/static/img/Flash7.jpg" alt=""/></li>
+                <li><img src="/static/img/Flash8.jpg" alt=""/></li>
+                <li><img src="/static/img/Flash9.jpg" alt=""/></li>
+            </ul>
+            <ul class="smaFlash">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="floorright">
+        <div class="floorTop">
+            <ul>
+                <li>精选特卖<span class="jiao" style="display: block;"></span></li>
+                <li>厨房用品<span class="jiao"></span></li>
+                <li>家居用品<span class="jiao"></span></li>
+                <li>精品家纺<span class="jiao"></span></li>
+                <li>汽车用品<span class="jiao"></span></li>
+            </ul>
+        </div>
+        <div class="floorBot">
+            <div class="floorHuo">
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+            </div>
+            <div class="floorIm">
+                <ul>
+                    <li><img src="../img/Img15.jpg" alt=""/></li>
+                    <li><img src="../img/Img16.jpg" alt=""/></li>
+                    <li><img src="../img/Img17.jpg" alt=""/></li>
+                    <li><img src="../img/Img18.jpg" alt=""/></li>
+                    <li><img src="../img/Img19.jpg" alt=""/></li>
+                    <li><img src="../img/Img20.jpg" alt=""/></li>
+                    <li><img src="../img/Img21.jpg" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="floor">
+    <div class="floorleft">
+        <div class="floorL">
+            <div class="floorimg">
+                <img src="../img/floor4f.jpg" alt=""/>
+            </div>
+            <div class="floorinfo">
+                <ul>
+                    <li>一段奶粉</li>
+                    <li>三段奶粉</li>
+                    <li>尿裤湿巾</li>
+                    <li>婴儿辅食</li>
+                    <li>水壶水杯</li>
+                    <li>婴儿奶瓶</li>
+                    <li>宝宝护肤</li>
+                    <li>婴儿推车</li>
+                    <li>安全座椅</li>
+                    <li>孕产用品</li>
+                    <li>孕妈洗护</li>
+                    <li>儿童玩具</li>
+                    <li>洗涤用品</li>
+                    <li>童装童鞋/li>
+                </ul>
+                <div class="Lunfla">
+                    <ul id="BIgfla">
+                        <li><img src="../img/xiaofloor4.jpg" alt=""/></li>
+                    </ul>
+                    <ul id="SMALLfla">
+                        <li>•</li>
+                        <li>•</li>
+                        <li>•</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floorF">
+            <ul class="bigFlash">
+                <li><img src="../img/Flash10.jpg" alt=""/></li>
+                <li><img src="../img/Flash11.jpg" alt=""/></li>
+                <li><img src="../img/Flash12.jpg" alt=""/></li>
+            </ul>
+            <ul class="smaFlash">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="floorright">
+        <div class="floorTop">
+            <ul>
+                <li>精选特卖<span class="jiao" style="display: block;"></span></li>
+                <li>母婴食品<span class="jiao"></span></li>
+                <li>母婴用品<span class="jiao"></span></li>
+                <li>车床玩具<span class="jiao"></span></li>
+                <li>童装孕产<span class="jiao"></span></li>
+            </ul>
+        </div>
+        <div class="floorBot">
+            <div class="floorHuo">
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+            </div>
+            <div class="floorIm">
+                <ul>
+                    <li><img src="../img/Img22.jpg" alt=""/></li>
+                    <li><img src="../img/Img23.jpg" alt=""/></li>
+                    <li><img src="../img/Img24.jpg" alt=""/></li>
+                    <li><img src="../img/Img25.jpg" alt=""/></li>
+                    <li><img src="../img/Img26.jpg" alt=""/></li>
+                    <li><img src="../img/Img27.jpg" alt=""/></li>
+                    <li><img src="../img/Img28.jpg" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="floor">
+    <div class="floorleft">
+        <div class="floorL">
+            <div class="floorimg">
+                <img src="../img/floor5f.jpg" alt=""/>
+            </div>
+            <div class="floorinfo">
+                <ul>
+                    <li>潮流女包</li>
+                    <li>精品男包</li>
+                    <li>手表</li>
+                    <li>丝袜/裤袜</li>
+                    <li>精致女鞋</li>
+                    <li>品牌男鞋</li>
+                    <li>文胸</li>
+                    <li>男士内裤</li>
+                    <li>男士短袜</li>
+                    <li>旅行箱包/li>
+                    <li>计生用品</li>
+                    <li>汽车用品</li>
+                    <li>拖把/扫把</li>
+                    <li>拖鞋</li>
+                </ul>
+                <div class="Lunfla">
+                    <ul id="BIgfla">
+                        <li><img src="../img/xiaofloor5.jpg" alt=""/></li>
+                    </ul>
+                    <ul id="SMALLfla">
+                        <li>•</li>
+                        <li>•</li>
+                        <li>•</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floorF">
+            <ul class="bigFlash">
+                <li><img src="../img/Flash3.jpg" alt=""/></li>
+                <li><img src="../img/Flash5.jpg" alt=""/></li>
+                <li><img src="../img/Flash9.jpg" alt=""/></li>
+            </ul>
+            <ul class="smaFlash">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="floorright">
+        <div class="floorTop">
+            <ul>
+                <li>品牌秀场<span class="jiao" style="display: block;"></span></li>
+                <li>皮具箱包<span class="jiao"></span></li>
+                <li>珠宝钟表<span class="jiao"></span></li>
+                <li>内衣鞋袜<span class="jiao"></span></li>
+                <li>时尚配饰<span class="jiao"></span></li>
+            </ul>
+        </div>
+        <div class="floorBot">
+            <div class="floorHuo">
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+            </div>
+            <div class="floorIm">
+                <ul>
+                    <li><img src="../img/Img15.jpg" alt=""/></li>
+                    <li><img src="../img/Img16.jpg" alt=""/></li>
+                    <li><img src="../img/Img17.jpg" alt=""/></li>
+                    <li><img src="../img/Img18.jpg" alt=""/></li>
+                    <li><img src="../img/Img19.jpg" alt=""/></li>
+                    <li><img src="../img/Img20.jpg" alt=""/></li>
+                    <li><img src="../img/Img21.jpg" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="floor">
+    <div class="floorleft">
+        <div class="floorL">
+            <div class="floorimg">
+                <img src="../img/floor6f.jpg" alt=""/>
+            </div>
+            <div class="floorinfo">
+                <ul>
+                    <li>一体机</li>
+                    <li>手机配件</li>
+                    <li>相机配件</li>
+                    <li>智能居家</li>
+                    <li>单反镜头</li>
+                    <li>台式机</li>
+                    <li>笔记本</li>
+                    <li>手机</li>
+                    <li>除湿机</li>
+                    <li>电磁炉</li>
+                    <li>冰箱</li>
+                    <li>电视</li>
+                    <li>电吹风</li>
+                    <li>电水壶</li>
+                </ul>
+                <div class="Lunfla">
+                    <ul id="BIgfla">
+                        <li><img src="../img/xiaofloor6.jpg" alt=""/></li>
+                    </ul>
+                    <ul id="SMALLfla">
+                        <li>•</li>
+                        <li>•</li>
+                        <li>•</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floorF">
+            <ul class="bigFlash">
+                <li><img src="../img/Flash13.jpg" alt=""/></li>
+                <li><img src="../img/Flash14.jpg" alt=""/></li>
+                <li><img src="../img/Flash15.jpg" alt=""/></li>
+            </ul>
+            <ul class="smaFlash">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="floorright">
+        <div class="floorTop">
+            <ul>
+                <li>精选特卖<span class="jiao" style="display: block;"></span></li>
+                <li>大家电<span class="jiao"></span></li>
+                <li>小家电<span class="jiao"></span></li>
+                <li>手机数码<span class="jiao"></span></li>
+                <li>电脑办公<span class="jiao"></span></li>
+            </ul>
+        </div>
+        <div class="floorBot">
+            <div class="floorHuo">
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+                <div class="floorpro">
+
+                </div>
+            </div>
+            <div class="floorIm">
+                <ul>
+                    <li><img src="../img/Img29.jpg" alt=""/></li>
+                    <li><img src="../img/Img30.jpg" alt=""/></li>
+                    <li><img src="../img/Img31.jpg" alt=""/></li>
+                    <li><img src="../img/Img32.jpg" alt=""/></li>
+                    <li><img src="../img/Img33.jpg" alt=""/></li>
+                    <li><img src="../img/Img34.jpg" alt=""/></li>
+                    <li><img src="../img/Img35.jpg" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Foot">
+    <div class="FootTop">
+        <ul>
+            <li class="Top">购物指南</li>
+            <li>购物流程</li>
+            <li>会员介绍</li>
+            <li>发票制度</li>
+            <li>积分政策</li>
+            <li>常见问题</li>
+        </ul>
+        <ul>
+            <li class="Top">配送方式</li>
+            <li>自提服务</li>
+            <li>送货上门</li>
+            <li>配送范围及时间</li>
+            <li>全球购配送说明</li>
+        </ul>
+        <ul>
+            <li class="Top">支付方式</li>
+            <li>线上支付</li>
+            <li>货到付款</li>
+            <li>利群金卡支付</li>
+            <li>礼品卡支付</li>
+        </ul>
+        <ul>
+            <li class="Top">售后服务</li>
+            <li>退换货政策</li>
+            <li>退款说明</li>
+            <li>品牌售后服务电话</li>
+            <li>投诉与建议</li>
+        </ul>
+        <ul>
+            <li class="Top">商家服务</li>
+            <li>商家入驻</li>
+            <li>商家管理规定</li>
+            <li>商家中心</li>
+        </ul>
+        <ul>
+            <li class="Top">利群商城订阅号</li>
+            <li>
+                <img src="../img/foot-ewm1.jpg" alt=""/>
+            </li>
+        </ul>
+        <ul>
+            <li class="Top">利群商城服务号</li>
+            <li>
+                <img src="../img/foot-ewm2.jpg" alt=""/>
+            </li>
+        </ul>
+    </div>
+    <div class="FootBott">
+        <img src="../img/foot_bg.jpg" alt=""/>
+    </div>
+    <div class="FootRAM">
+        <div class="Footroll">
+            <ul class="footmin">
+                <li>关于我们</li>
+                <li>联系我们</li>
+                <li>诚聘英才</li>
+                <li>手机利群</li>
+                <li>销售联盟</li>
+                <li>友情连接</li>
+                <li>网站合作</li>
+                <li>帮助中心</li>
+                <li class="rolllast">版权说明</li>
+            </ul>
+            <ul class="footbig">
+                <li>利群集团</li>
+                <li>百货集团</li>
+                <li>利群网</li>
+                <li>利群酒店</li>
+                <li>利群房地产</li>
+                <li>利群旅行社</li>
+                <li>利群药品</li>
+                <li>利群影城</li>
+                <li>利群水站</li>
+                <li class="rolllast">利群家政</li>
+            </ul>
+            <p>鲁ICP证09054331号-2 Copyright©2004-2015 利群集团青岛电子商务有限公司 版权所有</p>
+        </div>
+        <div class="Footwar">
+            <div class="Footwarimg">
+                <img src="../img/tip_pic1.jpg" alt="" style="margin-left: 0px;"/>
+                <img src="../img/tip_pic2.jpg" alt=""/>
+                <img src="../img/tip_pic3.jpg" alt=""/>
+                <img src="../img/tip_pic4.jpg" alt=""/>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="Nav">
+    <ul>
+        <li class="flashli"><img src="../img/nav1.jpg"/><span class="hover">在线客服</span></li>
+        <li class="flashli"><img src="../img/nav2.jpg"/><span class="hover">生活超市</span></li>
+        <li class="flashli"><img src="../img/nav3.jpg"/><span class="hover">美妆洗护</span></li>
+        <li class="flashli"><img src="../img/nav4.jpg"/><span class="hover">居家百货</span></li>
+        <li class="flashli"><img src="../img/nav5.jpg"/><span class="hover">母婴玩具</span></li>
+        <li class="flashli"><img src="../img/nav6.jpg"/><span class="hover">时尚名包</span></li>
+        <li class="flashli"><img src="../img/nav7.jpg"/><span class="hover">数码家电</span></li>
+        <li class="last"><img src="../img/nav8.jpg"/><span class="hover">回到顶部</span></li>
+    </ul>
+</div>
+</body>
+</html>

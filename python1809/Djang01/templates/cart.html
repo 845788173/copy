@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+</head>
+
+<body>
+    <h1>
+        {% if username %}
+            {{ username }} 购物车
+        {% else %}
+            还未 <a href="/login/">登录</a>
+        {% endif %}
+    </h1>
+</body>
+</html>

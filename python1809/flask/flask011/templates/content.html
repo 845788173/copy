@@ -1,0 +1,24 @@
+<div>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/content.css' )}}">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <p style="clear: both"></p>
+        {% macro hello() %}
+            <h4>这是一个流水线产品</h4>
+        {% endmacro %}
+        {{ hello() }}
+        {% macro say_hello(name) %}
+            <h3>很高兴见到你{{  name}}</h3>
+        {% endmacro %}
+        {{ say_hello('小明') }}
+        {% from 'mac.html' import what%}
+        {{ what('Fuck') }}
+
+    </ul>
+</div>

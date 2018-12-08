@@ -1,0 +1,1262 @@
+body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 500px;
+    padding: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top {
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+
+}
+
+.top p {
+    min-width: 400px;
+    width: 30%;
+    height: 30px;
+}
+
+.top span {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: darkgray;
+}
+
+.top a {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+.top .list {
+    max-width: 590px;
+    width: 60%;
+    height: 30px;
+    padding-top: 10px;
+    margin-left: 210px;
+}
+
+.top .list li {
+    float: left;
+    border-right: 1px solid gainsboro;
+    width: 90px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+
+}
+
+.top #list2 {
+    width: 80px;
+    height: 90px;
+    border-left: none;
+    position: absolute;
+    top: -10px;
+    left: 3px;
+    display: none;
+    border: 1px solid gainsboro;
+    border-top: none;
+    background: white;
+}
+
+.top #list2 li {
+    width: 80px;
+    line-height: 30px;
+    height: 22px;
+    border: none;
+    margin-left: -5px;
+}
+
+.top #list2 #lione {
+    background: url(../img/customer_service.jpg) no-repeat;
+    background-position: 62px 4px;
+}
+
+.top p, .top ul {
+    float: left;
+}
+
+.top .list #li1 {
+    background: url(../img/member_center.jpg) no-repeat;
+    background-position: 9px -2px;
+    width: 80px;
+    padding-left: 10px;
+}
+
+.top .list #li2 {
+    background: url(../img/customer_service.jpg) no-repeat;
+    background-position: 62px -3px;
+    width: 75px;
+    padding-right: 15px;
+}
+
+.top .list #li3 {
+    background: url(../img/liqun_mobile.jpg) no-repeat;
+    background-position: 9px -2px;
+    width: 75px;
+    padding-left: 12px;
+}
+
+.top .list #li4 {
+    width: 75px;
+}
+
+.top .list #li5 {
+    border-right: none;
+    width: 70px;
+}
+
+.top .list #li6 {
+    border-right: none;
+    width: 70px;
+    margin-left: -10px;
+}
+
+.logo {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#log {
+    width: 350px;
+    height: 80px;
+    float: left;
+    position: relative;
+}
+
+#log .fl {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.search {
+    width: 520px;
+    height: 80px;
+    float: left;
+    margin-top: 11px;
+    margin-left: 15px;
+}
+
+.search form {
+    width: 520px;
+    height: 35px;
+    border: 3px solid red;
+}
+
+.search form img {
+    float: left;
+}
+
+.search #sea {
+    display: block;
+    width: 416px;
+    height: 34px;
+    border: none;
+    float: left;
+}
+
+.search #sub {
+    width: 75px;
+    height: 36px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    float: left;
+}
+
+.search ul {
+    width: 520px;
+    height: 30px;
+}
+
+.search ul li {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 10px;
+    text-align: center;
+}
+
+.go {
+    width: 287px;
+    height: 50px;
+    float: left;
+    margin-left: 15px;
+}
+
+.go img {
+    margin-top: 15px;
+    float: left;
+    margin-left: 15px;
+}
+
+#Lis {
+    width: 800px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+#Lis li {
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    float: left;
+}
+
+#Lis #liqun {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px;
+    font-size: 16px;
+    float: left;
+    background: url(../img/new.jpg) no-repeat;
+    background-position: 65px 0px;
+}
+
+#Lis #map {
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    float: left;
+    background: url(../img/hot.jpg) no-repeat;
+    background-position: 51px 0px;
+}
+
+#Lis p {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    float: left;
+    margin-left: 60px;
+}
+
+#Lis #shou {
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    float: left;
+    text-align: center;
+}
+
+#Lis #last {
+    width: 100px;
+    height: 35px;
+    margin-left: 50px;
+    position: absolute;
+    right: 150px;
+    top: 130px;
+}
+
+.Cone {
+    width: 1200px;
+    height: 453px;
+    margin: 0 auto;
+}
+
+.lieb {
+    width: 190px;
+    height: 488px;
+    float: left;
+    position: relative;
+    margin-top: -35px;
+}
+
+.lieb #Top {
+    width: 190px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #b1191b;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lieb ul {
+    width: 190px;
+    height: 453px;
+    background: #C81622;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.lieb li {
+    width: 190px;
+    height: 50px;
+}
+
+.lieb li .title {
+    position: relative;
+    padding: 0 10px 0 20px;
+}
+
+.lieb li .title img {
+    position: absolute;
+    top: 4px;
+    left: 25px;
+}
+
+.lieb li .titop {
+    width: 130px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.lieb li .titop .le {
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    display: block;
+    float: left;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.lieb li .titop .ri {
+    text-align: right;
+    color: white;
+    font-size: 14px;
+    display: block;
+    float: right;
+    width: 6px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.lieb li .tibott {
+    width: 130px;
+    margin-left: 30px;
+}
+
+.lieb li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.mess {
+    width: 250px;
+    height: 450px;
+    float: left;
+    border: 1px solid #dddddd;
+}
+
+.mess .messtop {
+    width: 250px;
+    height: 250px;
+}
+
+.mess .messtop #tit {
+    width: 227px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6B6B6B;
+    margin-left: 11px;
+}
+
+.mess .messtop li {
+    width: 227px;
+    height: 22px;
+    margin-left: 11px;
+    font-size: 12px;
+    color: #6b6b6b;
+    line-height: 22px;
+}
+
+.mess .messtop #new {
+    line-height: 22px;
+    width: 209px;
+    height: 22px;
+    margin-left: 11px;
+    text-align: right;
+    font-size: 12px;
+    color: red;
+    background: url(../img/QQ图片20160927154240.png) no-repeat;
+    background-position: -3px 0px;
+}
+
+.mess .messtop #red {
+    line-height: 22px;
+    width: 209px;
+    height: 22px;
+    margin-left: 11px;
+    font-size: 12px;
+    color: red;
+}
+
+.mess .messbott {
+    width: 251px;
+    height: 198px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mess .messbott #xiao {
+    background: #ededed;
+    width: 253px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+    margin-left: 1px;
+}
+
+.mess .messbott #xiao li {
+    margin-top: 5px;
+    float: left;
+    line-height: 30px;
+    width: 21px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    color: #5a5a5a;
+    font: 28px/15px tahoma, Arial, Simsun;
+}
+
+.mess .messbott #xiao .act {
+    width: 21px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    color: #dedede;
+    font: 28px/15px tahoma, Arial, Simsun;
+}
+
+.mess .messbott #xiao2 {
+    width: 1900px;
+    height: 167px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.mess .messbott #xiao2 li {
+    float: left;
+    width: 251px;
+    height: 167px;
+}
+
+.mess .messbott #xiao2 li img {
+    width: 250px;
+    height: 167px;
+}
+
+.tu {
+    width: 740px;
+    height: 445px;
+    position: relative;
+    overflow: hidden;
+    margin: 8px 8px 0px 8px;
+    float: left;
+}
+
+.tu #flash {
+    width: 9999px;
+    height: 445px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tu #flash li {
+    float: left;
+}
+
+.tu #flash img {
+    width: 740px;
+    height: 445px;
+}
+
+.tu #flash2 {
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 240px;
+}
+
+.tu #flash2 li {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    float: left;
+    background: #656565;
+    color: #bababa;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.tu #flash2 .active {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    float: left;
+    background: white;
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.lunimg {
+    width: 1200px;
+    height: 146px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.lunimg .proma {
+    width: 190px;
+    height: 136px;
+    float: left;
+}
+
+.lunimg .promarea {
+    width: 1010px;
+    height: 138px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.lunimg .promarea #Bigarea {
+    margin: 1px 0px 0px 2px;
+    width: 20000px;
+    height: 136px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.lunimg .promarea #Bigarea li {
+    width: 252px;
+    float: left;
+    border: 1px solid #ccc;
+    border-right: none;
+    margin-left: -1px;
+}
+
+.lunimg .promarea #Bigarea li img {
+    width: 251px;
+    height: 131px;
+}
+
+.lunimg .promarea #prev {
+    width: 28px;
+    height: 48px;
+    color: white;
+    background: #999;
+    cursor: pointer;
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.lunimg .promarea #next {
+    width: 28px;
+    height: 48px;
+    color: white;
+    background: #999;
+    cursor: pointer;
+    position: absolute;
+    top: 44px;
+    right: 0px;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.floor {
+    width: 1200px;
+    height: 435px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.floorleft {
+    width: 477px;
+    height: 425px;
+    float: left;
+}
+
+.floorL {
+    width: 193px;
+    height: 423px;
+    float: left;
+}
+
+.floorL .floorimg {
+    width: 193px;
+    height: 53px;
+}
+
+.floorL .floorimg img {
+    width: 193px;
+    height: 53px;
+}
+
+.floorL .floorinfo {
+    width: 191px;
+    height: 370px;
+}
+
+.floorL .floorinfo ul {
+    width: 181px;
+    height: 225px;
+    margin-left: 10px;
+}
+
+.floorL .floorinfo ul li {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 宋体;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.floorL .Lunfla {
+    width: 191px;
+    height: 145px;
+    position: relative;
+}
+
+.floorL .Lunfla #BIgfla {
+    width: 191px;
+    height: 145px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+}
+
+.floorL .Lunfla #BIgfla li {
+    width: 191px;
+    height: 145px;
+}
+
+.floorL .Lunfla #BIgfla li img {
+    width: 191px;
+    height: 145px;
+}
+
+.floorL .Lunfla #SMALLfla {
+    width: 73px;
+    height: 15px;
+    position: absolute;
+    left: 0px;
+    bottom: 12px;
+}
+
+.floorL .Lunfla #SMALLfla li {
+    margin-top: 5px;
+    float: left;
+    line-height: 20px;
+    width: 21px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #5a5a5a;
+    font: 28px/15px tahoma, Arial, Simsun;
+}
+
+.floorL .Lunfla #SMALLfla .acti {
+    width: 21px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    color: #dedede;
+    font: 28px/15px tahoma, Arial, Simsun;
+}
+
+.floorF {
+    width: 283px;
+    height: 423px;
+    float: left;
+    position: relative;
+}
+
+.floorF .bigFlash {
+    width: 283px;
+    height: 423px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.floorF .bigFlash li {
+    width: 283px;
+    height: 423px;
+}
+
+.floorF .bigFlash li img {
+    width: 283px;
+    height: 423px;
+}
+
+.floorF .smaFlash {
+    width: 225px;
+    height: 7px;
+    position: absolute;
+    bottom: 16px;
+    left: 33px;
+}
+
+.floorF .smaFlash li {
+    width: 70px;
+    height: 7px;
+    background: #CEB9BE;
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.floorright {
+    width: 720px;
+    height: 425px;
+    float: left;
+}
+
+.floorright .floorTop {
+    width: 720px;
+    height: 38px;
+    border-bottom: 3px solid #D0D0D0;
+}
+
+.floorright .floorTop ul {
+    width: 560px;
+    height: 35px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.floorright .floorTop ul li {
+    width: 90px;
+    height: 35px;
+    line-height: 42px;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: -3px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.floorright .floorTop ul li .jiao {
+    border-top: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid red;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    display: none;
+}
+
+.bor {
+    width: 90px;
+    height: 35px;
+    line-height: 42px;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    border-bottom: 3px solid red;
+    margin-left: 15px;
+    position: relative;
+}
+
+.floorright .floorBot {
+    width: 720px;
+    height: 388px;
+    float: left;
+}
+
+.floorright .floorBot .floorHuo {
+    width: 595px;
+    height: 385px;
+    overflow: hidden;
+    float: left;
+}
+
+.floorright .floorBot .floorHuo .floorpro {
+    width: 595px;
+    height: 385px;
+    display: none;
+}
+
+.floorright .floorBot .floorHuo .floor_pro {
+    width: 196px;
+    height: 192px;
+    float: left;
+    border-right: 1px solid #F4F4F4;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.floorright .floorBot .floorHuo .floor_pro img {
+    width: 142px;
+    height: 142px;
+    margin-left: 26px;
+}
+
+.floorright .floorBot .floorHuo .floor_pro .concent {
+    width: 170px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #929292;
+    text-align: left;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.floorright .floorBot .floorHuo .floor_pro .price {
+    width: 170px;
+    height: 20px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: red;
+}
+
+.price font {
+    width: 60px;
+    height: 12px;
+    color: red;
+    font-size: 12px;
+}
+
+.floorIm {
+    width: 120px;
+    height: 385px;
+    float: left;
+}
+
+.floorIm ul {
+    width: 120px;
+    height: 385px;
+}
+
+.floorIm ul li {
+    width: 121px;
+    height: 55px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.floorIm ul li img {
+    width: 121px;
+    height: 54px;
+}
+
+.Foot {
+    width: 100%;
+    height: 489px;
+}
+
+.Foot .FootTop {
+    width: 1200px;
+    height: 190px;
+    border: 1px solid #E3E3E3;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.Foot .FootTop ul {
+    float: left;
+    margin: 15px;
+    width: 140px;
+    list-style-type: disc;
+}
+
+.Foot .FootTop ul li {
+    margin: 5px;
+    line-height: 16px;
+    font-size: 13px;
+    text-align: left;
+    color: #929292;
+    cursor: pointer;
+}
+
+.Foot .FootTop ul .Top {
+    font-size: 14px;
+    color: #BEBEBE;
+    font-family: 宋体;
+    font-weight: bolder;
+    line-height: 30px;
+    margin: 5px;
+    border-bottom: 1px solid #E3E3E3;
+    text-align: left;
+}
+
+.Foot .FootBott {
+    width: 1200px;
+    height: 117px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.FootRAM {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Footroll {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.Footroll .footmin {
+    width: 736px;
+    height: 16px;
+    margin-top: 16px;
+    margin: 0 auto;
+}
+
+.Footroll .footbig {
+    width: 817px;
+    height: 16px;
+    margin: 10px 191px 0px 191px;
+}
+
+.Footroll p {
+    width: 462px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 11px;
+    color: #BDBDBD;
+    margin: 0 auto;
+}
+
+.Footroll .footmin li {
+    cursor: pointer;
+    height: 12px;
+    line-height: 12px;
+    float: left;
+    border-right: 1px solid #929292;
+    color: #929292;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.Footroll .footmin .rolllast {
+    width: auto;
+    height: 12px;
+    line-height: 12px;
+    margin-right: 8px;
+    float: left;
+    border: none;
+    color: #929292;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.Footroll .footbig li {
+    width: 80px;
+    height: 12px;
+    line-height: 12px;
+    float: left;
+    border-right: 1px solid #929292;
+    color: #929292;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Footroll .footbig .rolllast {
+    width: auto;
+    height: 12px;
+    line-height: 12px;
+    margin-right: 8px;
+    float: left;
+    border: none;
+    color: #929292;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.Footwar {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.Footwar .Footwarimg {
+    width: 493px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.Footwar .Footwarimg img {
+    width: 108px;
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+}
+
+.Nav {
+    width: 36px;
+    height: 288px;
+    position: fixed;
+    right: 50px;
+    top: 200px;
+    display: none;
+}
+
+.Nav ul {
+    width: 36px;
+    height: 288px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.Nav ul li {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.Nav ul li img {
+    width: 36px;
+    height: 36px;
+}
+
+.Nav ul li .hover {
+    display: none;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid red;
+    background: lightpink;
+    color: red;
+    line-height: 17px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.header-pop {
+    width: 765px;
+    height: 450px;
+    position: absolute;
+    top: 0px;
+    left: 190px;
+    background: white;
+    z-index: 999;
+    border: 1px solid red;
+    display: none;
+}
+
+.header-pop .colum {
+    width: 245px;
+    float: left;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.second-class {
+    width: 235px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.first-tit {
+    border-bottom: 1px solid black;
+    height: 36px;
+    line-height: 46px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    overflow: hidden;
+
+}
+
+.first-tit img {
+    float: left;
+}
+
+.first-tit .A {
+    display: block;
+    color: black;
+    width: 56px;
+    height: 46px;
+    line-height: 46px;
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+}
+
+.first-tit .B {
+    width: 50px;
+    height: 46px;
+    float: right;
+    line-height: 46px;
+    color: black !important;
+
+}
+
+.second-tit {
+    width: 241px;
+    overflow: hidden;
+    margin-top: 4px;
+    border-bottom: 1px dotted #6b6b6b;
+}
+
+.second-tit > a {
+    display: inline-block;
+    white-space: nowrap;
+    border-left: 1px solid #eee;
+    padding: 0 3px;
+    text-align: center;
+    color: #6b6b6b !important;
+}
+
+.third-tit {
+    width: 235px;
+}
+
+.brand-tit {
+    width: 237px;
+    height: 27px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 27px;
+    color: #535154;
+}
+
+.brand-area {
+    width: 235px;
+}
+
+.brand-area > a {
+    display: inline-block;
+    white-space: nowrap;
+    border-left: 1px solid #eee;
+    padding: 0 3px;
+    text-align: center;
+    color: #6b6b6b !important;
+}
+
+.second-tit .A {
+    display: block;
+    color: black !important;
+    font-weight: bold;
+    width: 56px;
+    height: 46px;
+    line-height: 46px;
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+}
+
+.second-tit .B {
+    font-weight: bold;
+    color: black !important;
+    width: 50px;
+    height: 46px;
+    float: right;
+    line-height: 46px;
+}
+
+.second-tit img {
+    float: left;
+}
+
+.second-tit2 {
+    width: 241px;
+    border-bottom: 1px dotted #6b6b6b;
+}
+
+.second-tit2 a {
+    display: inline-block;
+    white-space: nowrap;
+    border-left: 1px solid #eee;
+    padding: 0 3px;
+    text-align: center;
+    color: #6b6b6b !important;
+}
+
+.tbody {
+    width: 998px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}

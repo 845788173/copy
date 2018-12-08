@@ -1,0 +1,279 @@
+/**{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+body{
+    font: 12px/1.5 Arial;
+    color: #333;
+    background: #fafafa;
+}
+.top,.bottom{
+	width: 100%;
+	min-width: 990px;
+}
+
+.top{
+	padding: 20px 0;
+}
+
+.bottom{
+	padding: 15px 0;
+}
+.top .logo,.top .loginBox{
+	width: 990px;
+	margin: 0 auto;
+}
+
+.top .logo .left_logo{
+	float: left;
+	margin-bottom: 40px;
+}
+
+.top .logo .left_logo a img{
+	width: 182px;
+	height: 60px;
+	float: left;
+}
+
+.top .logo .left_logo a span{
+	display: inline-block;
+	width: 165px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 14px;
+	margin-left:8px ;	
+	padding: 10px 0 0 10px;
+	color: #666;
+	border-left: 1px solid #e6e6e6;
+	
+}
+
+.top .logo .right_rst{
+	float: right;
+	padding: 21px 0 0;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.top .logo .right_rst a{
+	display: inline-block;
+	height: 16px;
+	line-height: 14px;
+	padding: 3px 10px;
+	color: #c00;
+}
+
+.top .logo .right_rst a:hover{
+	color: #fff;
+	background-color: #cd1f1f;
+}*/
+body{
+    background: #fafafa;
+}
+.top .logo .left_logo {
+	margin-bottom: 40px;
+}
+.top .loginBox{
+	overflow: hidden;
+	border: 1px solid #e6e6e6;
+	background: #FFFFFF;
+	width: 990px;
+	margin: 0 auto;
+}
+.top .loginBox .leftImg,.top .loginBox .leftImg img{
+	float: left;
+}
+.top .loginBox .loginTab{
+	float: right;
+	width: 290px;
+	margin-right: 90px;
+	
+}
+
+.top .loginBox .loginTab .login_head{
+	padding-top: 20px ;
+	padding-bottom: 10px;
+}
+
+.top .loginBox .loginTab .login_head span{
+	display: inline-block;
+	height: 28px;
+	font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+	color: #666;
+}
+
+.top .loginBox .loginTab .login_head a{
+	display: inline-block;
+	float: right;
+	padding: 0 0 0 17px;
+	background: url(../img/shop_login_bg.png) no-repeat -280px -113px;
+	color: #333;
+	line-height: 28px;
+}
+
+/*.top .loginBox .loginTab .content{
+	padding-top: 30px;
+}*/
+
+.top .loginBox .loginTab .content .tipsBox{
+	height: 20px;
+	margin: 5px 0;
+	/*visibility: hidden;*/
+	display: none;
+	color: #F33;
+	border: 1px solid #F99;
+	background-color: #FFF2F2;
+}
+
+.top .loginBox .loginTab .content .tipsBox i.mistake_tips{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 8px;
+	background: url(../img/shop_login_bg.png) -270px -89px;
+}
+
+.top .loginBox .loginTab .content .tipsBox span{
+	display: inline-block;
+	float: left;
+}
+.top .loginBox .loginTab .content .login_item{
+	margin-bottom: 7px;
+	padding: 8px 5px;
+	height: 22px;
+	border: 1px solid #ccc;
+	
+}
+
+._input{
+	display: block;
+	width: 278px;
+	height: 22px;
+	font: 14px/22px "Arial";
+	border: 0;
+	outline: none;
+}
+
+.top .loginBox .loginTab .content a{
+	display: inline-block;
+	float: right;
+	margin-bottom: 10px;
+}
+.top .loginBox .loginTab .content a:hover{
+	color: #CC0000;	
+	border-bottom: 1px #CC0000 solid;
+}
+
+.top .loginBox .loginTab .content input.btn{
+	display: block;
+	margin-bottom:15px;
+	width: 290px;
+	height: 40px;
+	font: bold 14px/40px "Arial";
+	color: #fff;
+	text-align: center;
+	border: 0 none;
+	background: url(../img/shop_login_bg.png);
+	background-position: 0 0;
+	outline: none;
+}
+.top .loginBox .loginTab .content input.btn:hover{
+	background-position: 0 -40px;
+}
+
+.top .loginBox .loginTab .login_foot{
+	width: 290px;
+}
+.top .loginBox .loginTab .login_foot .xian{
+	float: left;
+	height: 1px;
+	background: #f0f0f0;
+	width: 100px;
+	margin-top: 7px;
+}
+.top .loginBox .loginTab .login_foot p {
+	float: left;
+	color: #666666;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo{
+	padding: 25px 0 0 20px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin-right: 10px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.weixin{
+	background: url(../img/bgs2.png) no-repeat 0 0;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.weixin:hover{
+	background-position: 0 -38px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.weibo{
+	background: url(../img/shop_login_bg.png) no-repeat 0 -82px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.weibo:hover{
+	background-position: 0 -121px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.qq{
+	background: url(../img/shop_login_bg.png) no-repeat -39px -82px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.qq:hover{
+	background-position: -39px -121px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.zhifubao{
+	background: url(../img/shop_login_bg.png) no-repeat -78px -82px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.zhifubao:hover{
+	background-position: -78px -121px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.baidu{
+	background: url(../img/shop_login_bg.png) no-repeat -117px -82px;
+}
+
+.top .loginBox .loginTab .login_foot .cptLogo a.baidu:hover{
+	background-position: -117px -121px;
+}
+
+/*.bottom{
+	width: 100%;
+	border-top: 1px solid #dcdcdc;
+	margin-top: 70px;
+}
+
+.bottom .footer{
+	width: 990px;
+	margin: 0 auto;
+}
+
+.bottom .footer a{
+	display: inline-block;
+	margin: 0 10px;
+	float: left;
+	color: #666;
+	
+}
+.bottom .footer i{
+	display: inline-block;
+	float: left;
+}
+.bottom .footer span{
+	float: right;
+}*/

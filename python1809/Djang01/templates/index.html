@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+{% if username %}
+    <h1>用户: {{ username }}</h1>
+{% else %}
+    <h1> 未登录(请登录后操作) </h1>
+{% endif %}
+
+<p>
+    <a href="/login/">登录</a>
+</p>
+<p>
+    <a href="/register/"> 注册 </a>
+</p>
+<p>
+    <a href="/logout/">退出</a>
+</p>
+
+<p>
+    <a href="/cart/">购物车</a>
+</p>
+
+
+<br>
+<br>
+<hr>
+
+
+<h3>
+    <a href="/randomview/"> 项目分配 </a>
+</h3>
+
+</body>
+</html>

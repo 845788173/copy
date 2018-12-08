@@ -1,0 +1,17 @@
+
+
+
+{% block content %}
+    <div class="container"></div>
+
+         <form action="{% url 'AXF:' %}" method="post" enctype="multipart/form-data">
+         {% csrf_token %}
+            <div class="form-group">
+                <label >yonghuming</label>
+                <input type="text" class="form-control" id='username' name="username" placeholder="6weidao18weidshuzixiahuaxianbunengyishuzikaitou">
+                <p id="user-tip">{{ msg }}</p>
+            </div>
+
+
+         </form>
+{% endblock %}

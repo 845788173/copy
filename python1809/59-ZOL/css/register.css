@@ -1,0 +1,315 @@
+.top .logo .left_logo {
+	margin-bottom: 20px;
+}
+.content{
+	width: 990px;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 1px solid #E6E6E6;
+}
+
+.content .title{
+	width: 990px;
+	overflow: hidden;
+	padding: 16px 0 16px 90px;
+	background: #fafafa;
+	font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+	color: #999;
+}
+
+.content .register{
+	width: 990px;
+}
+
+.content .registerBox {
+	width: 600px;
+	padding: 30px 0 45px 89px;
+	float: left;
+}
+
+.content .registerBox ul.rgtWay{
+	width: 500px;
+	background: #fafafa;
+	overflow: hidden;
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+.content .registerBox ul.rgtWay li:first-child{
+	line-height:38px ;
+	font-size: 18px;
+	float: left;
+	/*position: relative;*/
+	border-right: 1px solid #e6e6e6;
+	border-left: 1px solid #E6E6E6;
+	border-top: 2px solid #CC0000;
+	background: #fafafa;
+	cursor: pointer;
+	color: #CC0000;
+}
+
+.content .registerBox ul.rgtWay li:last-child{
+	height: 38px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.content .registerBox ul.rgtWay li.way1{
+	width: 188px;
+	padding-left: 60px;
+}
+
+/*.content .registerBox ul.rgtWay li.way2{
+	width: 206px;
+	padding-left: 42px;
+}*/
+
+.content .registerBox ul.rgtWay li em.phone_num{
+	display: inline-block;
+	float: left;
+	width: 20px;
+	height: 31px;
+	background: url(../img/login-bg.png) no-repeat -158px -235px;
+}
+
+/*.content .registerBox ul.rgtWay li em.email{
+	display: inline-block;
+	float: left;
+	width: 32px;
+	height: 31px;
+	background: url(../img/login-bg.png) no-repeat -146px -326px;
+}*/
+
+/*.content .registerBox .registerphone{
+	padding: 30px 0 10px 0;
+	
+}*/
+.registerphone{
+	overflow: hidden;
+	height: 80px;
+}
+.content .registerBox .registerphone .formInput{
+	position: relative;
+    margin-bottom: 42px;
+	padding: 0 0 0 87px;
+	
+}
+
+.content .registerBox .registerphone .formInput .lable{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 83px;
+	font: 14px/40px "Arial";
+	text-align: right;
+	color: #666;
+}
+
+.content .registerBox .registerphone .formInput .lable em{
+	padding-right: 7px;
+	font-size: 12px;
+	font-family: "Simsun";
+	color: #f30;
+}
+.content .registerBox .registerphone .formInput input{
+	display: block;
+	margin: 0 10px 0 0;
+	padding: 8px 5px;
+	height: 22px;
+	border: 1px solid #ccc;
+	float: left;
+	outline: none;
+}
+
+
+
+.content .registerBox .registerphone .formInput i.right_tips{
+	display: none;
+	background: url(../img/login-bg.png);
+	/*display: inline-block;*/
+	width: 15px;
+	height: 15px;
+	font: 0/0 "Arial";
+	background-position: -155px -162px;
+	float: left;
+	margin-top: 13px;
+}
+
+.content .registerBox .registerphone .formInput .tipsBox{
+	display: none;
+	line-height: 40px;
+	color: #CC0000;
+}
+
+.content .registerBox .registerphone .formInput i.mistake_tips{
+	display: block;
+	background: url(../img/login-bg.png);
+	width: 15px;
+	height: 15px;
+	font: 0/0 "Arial";
+	background-position: -155px -196px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 12px;
+}
+
+.content .registerBox .registerphone .formInput .tips{
+	color: #aaa;
+	float: left;
+	position: absolute;
+	top: 48px;
+}
+
+/*手机号*/
+.content .registerBox .registerphone .formInput input.number,
+.content .registerBox .registerphone .formInput input.pwd_first,
+.content .registerBox .registerphone .formInput input.pwd_again{
+	width: 278px;
+}
+
+/*验证码*/
+.content .registerBox .registerphone .formInput input.code{
+	width: 140px;
+}
+
+.content .registerBox .registerphone .formInput span.captcha{
+	display: inline-block;
+	background:url(../img/captcha/captcha.png);
+	width: 98px;
+	height: 38px;
+	margin-top: 1px;
+	float: left;
+	margin-right: 10px;
+}
+
+.content .registerBox .registerphone .formInput  a.chang{
+	display: inline-block;
+	float: left;
+	font: 12px/40px "Arial";
+	margin-right: 10px;
+}
+
+.content .registerBox .registerphone .formInput  a.chang:hover{
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+
+/*手机验证码*/
+.content .registerBox .registerphone .formInput input.phone_code{
+	width: 140px;
+}
+
+.content .registerBox .registerphone .formInput a.repossess{
+	display: inline-block;
+	width: 110px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+	color: #666;
+}
+
+.content .registerBox .agreement{
+	display: block;
+	padding: 0 0 0 85px;
+	height: 32px;
+	font: 12px/32px "Arial";
+	color: #999;
+}
+
+.content .registerBox label.agreement input.check{
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+.content .registerBox label.agreement a{
+	color: #134ba0;
+}
+
+.content .registerBox label.agreement a:hover{
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+.content .registerBox input.rgt_btn{
+	display: block;
+	margin: 20px 0 0 83px;
+	width: 290px;
+	height: 40px;
+	font: bold 14px/40px "Arial";
+	color: #fff;
+	text-align: center;
+	border: 0 none;
+	background: url(../img/shop_login_bg.png);
+	background-position: 0 0;
+	outline: none;
+	/*cursor: pointer;*/
+}
+
+.content .registerBox input.rgt_btn:hover{
+	background-position: 0 -41px;
+}
+
+/*快速登录*/
+.content .register .fast_login{
+	width: 170px;
+	float: right;
+	margin: 30px 30px 0 0;
+	/*padding: 0 80px 0 25px;*/
+	padding-left:20px ;
+	border-left: 1px solid #f5f5f5;
+}
+
+.content .register .fast_login p{
+	font: 12px/24px "Arial";
+	color: #666;
+}
+
+.content .register .fast_login p a{
+	color: #134ba0;
+}
+
+.content .register .fast_login p a:hover{
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+.content .register .fast_login .fast_loginList a{
+	display: block;
+	margin-top: 15px;
+	width: 170px;
+	height: 36px
+}
+
+.content .register .fast_login .fast_loginList a:hover{
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.content .register .fast_login .fast_loginList a.weixin{
+	background: url(../img/weixin.png) no-repeat 0 0;
+}
+
+.content .register .fast_login .fast_loginList a.weibo{
+	background: url(../img/login-bg.png) no-repeat 0 0;
+}
+
+.content .register .fast_login .fast_loginList a.qq{
+	background: url(../img/login-bg.png) no-repeat 0 -37px;
+}
+
+.content .register .fast_login .fast_loginList a.zhifubao{
+	background: url(../img/login-bg.png) no-repeat 0 -74px;
+}
+
+.content .register .fast_login .fast_loginList a.baidu{
+	background: url(../img/login-bg.png) no-repeat 0 -111px;
+}
+
+.buttom{
+	/*margin: 50px 0 20px 0;*/
+	padding-bottom: 30px;
+}

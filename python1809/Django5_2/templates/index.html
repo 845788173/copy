@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>美团|首页</title>
+</head>
+<body>
+
+<h1>
+    {% if username %}
+        用户:{{ username }}
+    {% else %}
+        游客(未登录)
+    {% endif %}
+</h1>
+
+<p>
+    <a href="{% url 'meituan:login' %}">登录</a>
+</p>
+<p>
+    <a href="{% url 'meituan:register' %}">注册</a>
+</p>
+<p>
+    <a href="{% url 'meituan:logout' %}">退出</a>
+</p>
+
+<p>
+    <a href="{% url 'meituan:about' %}"> 关于 </a>
+</p>
+
+<hr>
+
+
+<p>
+    <a href="{% url 'meituan:verifycode' %}"> 生成验证码 </a>
+</p>
+
+<p>
+    <a href="{% url 'meituan:testrequest' %}"> 请求对象 </a>
+</p>
+
+<p>
+    <a href="{% url 'meituan:testget' %}"> GET请求 </a>
+</p>
+
+<p>
+    <a href="{% url 'meituan:testpost' %}"> POST请求 </a>
+</p>
+
+<p>
+    <a href="{% url 'meituan:testresponse' %}"> 响应对象 </a>
+</p>
+
+<p>
+    <a href="{% url 'meituan:testjson' %}"> 响应对象(JSON) </a>
+</p>
+
+</body>
+</html>

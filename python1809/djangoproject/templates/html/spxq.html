@@ -1,0 +1,285 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/css/spxq.css"/>
+		<script src="/static/js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="/static/js/spxq.js" type="text/javascript" charset="utf-8"></script>
+	    
+	</head>
+	<body>
+		<div>
+		<div class="top">
+			<p>
+			   <span id="hi">Hi，</span>
+			   <span id="us"></span>
+			   <span>欢迎来到利群商城！</span>
+			   <a href="../html/denglu.html">请登录</a>
+			   <a href="../html/zhuce.html">免费注册</a>
+			</p>
+			<ul class="list">
+				<li>我的订单</li>
+				<li id="li1">会员中心</li>
+				<li id="li2">
+					客户服务
+					<ul id="list2">
+						<li id="lione">客户服务</li>
+						<li>帮助中心</li>
+						<li>售后服务</li>
+						<li>在线投诉</li>
+					</ul>
+				</li>
+				<li id="li3">手机利群</li>
+				<li id="li4">利群官网</li>
+				<li id="li5">关注利群：</li>
+				<li id="li6">
+					<img src="/static/img/tdcode.jpg" id="img1"/>
+					<img src="/static/img/qq.jpg"/>
+					<img src="/static/img/sina.jpg"/>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="logo">
+			<div id="log">
+				<a href="../html/zhuye.html"><img src="/static/img/logo.jpg"></a>
+				<img src="http://promotion.liqunshop.com/Promotion/headImg/3002.gif" class="fl">
+			</div>
+			<div class="search">				
+				<form action="" method="post">
+					<img src="/static/img/search.jpg" alt="" />
+					<input type="text" name="" id="sea" value="" />
+					<input type="submit" value="搜  索" id="sub"/>
+				</form>
+				<ul id="Hov">
+					<li>热门搜索：</li>
+					<li class="hover">iphone7大促</li>
+					<li class="hover">面膜7折起</li>
+					<li class="hover">贝亲五折</li>
+					<li class="hover">买就送晶露</li>
+					<li class="hover">朗信专场</li>
+				</ul>
+			</div>
+			<div class="go">
+				<img src="/static/img/go_cart.jpg" alt="" />
+				<img src="/static/img/hot_tel.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+	<div class="concent">
+		<div class="concentleft">
+			<ul class="blank">
+				<h3>&nbsp;相关分类</h3>				
+				<li class="blankli">拖把/扫把</li>
+				<li  class="blankli">收纳/衣架</li>
+				<li class="blankli">雨具</li>
+				<li class="blankli">水桶/脸盆</li>
+				<li class="blankli">浴室用品</li>
+				<li class="blankli">驱虫驱蚊</li>
+				<li class="blankli">垃圾桶 </li>
+				<li class="blankli">拖鞋</li>
+				<li class="blankli">一次性用品</li>
+				<li class="blankli">家居清洁护理</li>
+				<li class="blankli">其它日用</li>
+			</ul>
+			<ul class="blank">
+				<h3>&nbsp;同类其他品牌</h3>
+				<li class="blankli1">枪手</li>
+				<li class="blankli1">益居花露水</li>
+				<li class="blankli1">嘉乐宝</li>
+				<li class="blankli1">超威</li>
+				<li class="blankli1">隆力奇</li>
+				<li class="blankli1">六神</li>
+				<li class="blankli1">雷达</li>
+				<li class="blankli1">全无敌</li>
+				<li class="blankli1">益居花露水</li>
+			</ul>
+			<ul class="blank" style="background-color: #F7F7F7;">
+				<h3>&nbsp;热销排行榜 TOP5</h3>
+				<li class="blankli2">
+					<img src="/static/img/left1.gif" alt="" style="margin-top: 0px;"/>
+					<p>六神花露水195ml</p>
+				</li>
+				<li class="blankli2">
+					<img src="/static/img/left2.gif" alt="" />
+					<p>六神喷雾驱蚊花露水180ml</p>
+				</li>
+				<li class="blankli2">
+					<img src="/static/img/left3.gif" alt="" />
+					<p>雷达杀虫气雾剂无味600ml</p>
+				</li>
+				<li class="blankli2">
+					<img src="/static/img/left4.gif" alt="" />
+					<p>枪手小骑士杀虫气雾剂600ml</p>
+				</li>
+				<li class="blankli2">
+					<img src="/static/img/left5.gif" alt="" />
+					<p>枪手蚊香标准10单盘（清香）</p>
+				</li>
+			</ul>
+		</div>
+		<div class="concentright">
+			<div class="productmes">
+				<ul class="mestop">
+					<h3>日用百货  </h3>
+					<li>> 居家日用</li>
+					<li>> 驱虫驱蚊 </li>
+					<li id="tit" style="width: 700px;"></li>
+				</ul>
+				<ul class="mesmidd">
+					<li class="mesimg">
+                        <img src="{{ good.g_img }}" alt="">
+						<div id="smallArea" style="display: none; width: 50px; height: 50px; position: absolute; left: 20px; top: 0; background: rgba(200, 255, 200, 0.3);"></div>
+					</li>
+					<div id="bigArea" style="overflow: hidden; width: 300px; height: 300px;  position: absolute; left: 255px; top: 0px;display: none;">
+			                   
+		            </div>
+					<li class="mesconcent">
+						<h1 id="goodname"></h1>
+						<dl class="data">
+							<dt><span>商  城  价：</span><span id="price" style="font-size: 20px; color: red; font-weight: bold;">{{ good.g_price }}</span></dt>
+							<dt><span>毛        重：</span><span>{{ good.g_concent }}</span></dt>
+							<dt><span>送  积  分：</span><span>促销商品不积分</span></dt>
+							<dt><span>支        持：</span><span>山东省内满88元20公斤以下免运费 </span><span style="color:  red;"> 查看详细</span></dt>
+							<dt><span>服        务：</span><span>由  </span> <span style="color: red;"> 利群商城 </span> <span>发货并提供售后服务。</span></dt>
+							<dt style="height: 5px; border-bottom: 1px solid lightGrey;"><span></span></dt>
+							<dt style="margin-top: 10px;"><span>购买数量：</span>
+								<input type="button" value="-" id="btn1" goodid="{{ good.id }}" />
+								<input type="text" value=0 id="btn2" />
+							    <input type="button" value="+" id="btn3"  goodid="{{ good.id }}" />
+							</dt>
+							<dd>
+								<a href="/liqun/cart/"id="buy"><img src="/static/img/buy.jpg" alt="" /></a>
+								<img src="/static/img/shoucang.jpg" alt=""  style="margin-left: 20px;"/>
+						</dl>
+						
+					</li>
+				</ul>
+			</div>
+			<ul class="selected">
+									<span>更多选择：</span>
+									<li>枪手驱虫驱蚊 </li>
+									<li>益居花露水驱虫驱蚊</li>
+									<li>嘉乐宝驱虫驱蚊 </li>
+									<li>超威驱虫驱蚊</li>
+									<li>隆力奇驱虫驱蚊</li>
+									<img id="sel" src="/static/img/brandClassShowMore.png" alt="" style="margin-top: 3px;"/>
+									<li style="margin-left: 77px;">六神驱虫驱蚊</li>
+									<li>雷达驱虫驱蚊</li>
+									<li>全无敌驱虫驱蚊</li>
+									<li>益居花露水驱虫驱蚊</li>
+			</ul>
+			
+			<ul class="introduce">
+				<li>商品介绍</li>
+				<li>商品评价</li>
+			</ul>
+			<ul class="proimg">
+				<li>
+					<img src="/static/img/proimg1.jpg" alt="" />
+					<img src="/static/img/proimg1.jpg" alt="" />
+					<img src="/static/img/proimg1.jpg" alt="" />
+				</li>
+				<li>
+					<img src="/static/img/QQ图片20160930134401.png" style="margin-left: -10px;" alt="" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Foot">
+			<div class="FootTop">
+				<ul>
+					<li class="Top">购物指南</li>
+					<li>购物流程</li>
+					<li>会员介绍</li>
+					<li>发票制度</li>
+					<li>积分政策</li>
+					<li>常见问题</li>
+				</ul>
+				<ul>
+					<li class="Top">配送方式</li>
+					<li>自提服务</li>
+					<li>送货上门</li>
+					<li>配送范围及时间</li>
+					<li>全球购配送说明</li>
+				</ul>
+				<ul>
+					<li class="Top">支付方式</li>
+					<li>线上支付</li>
+					<li>货到付款</li>
+					<li>利群金卡支付</li>
+					<li>礼品卡支付</li>
+				</ul>
+				<ul>
+					<li class="Top">售后服务</li>
+					<li>退换货政策</li>
+					<li>退款说明</li>
+					<li>品牌售后服务电话</li>
+					<li>投诉与建议</li>
+				</ul>
+				<ul>
+					<li class="Top">商家服务</li>
+					<li>商家入驻</li>
+					<li>商家管理规定</li>
+					<li>商家中心</li>
+				</ul>
+				<ul>
+					<li class="Top">利群商城订阅号</li>
+					<li>
+						<img src="/static/img/foot-ewm1.jpg" alt="" />
+					</li>
+				</ul>
+				<ul>
+					<li class="Top">利群商城服务号</li>
+					<li>
+						<img src="/static/img/foot-ewm2.jpg" alt="" />
+					</li>
+				</ul>
+			</div>
+			<div class="FootBott">
+					<img src="/static/img/foot_bg.jpg" alt="" />
+			</div>
+			<div class="FootRAM">
+				<div class="Footroll">
+					<ul class="footmin">
+						<li>关于我们</li>
+						<li>联系我们</li>
+						<li>诚聘英才</li>
+						<li>手机利群</li>
+						<li>销售联盟</li>
+						<li>友情连接</li>
+						<li>网站合作</li>
+						<li>帮助中心</li>
+						<li class="rolllast">版权说明</li>
+					</ul>
+					<ul class="footbig">
+						<li>利群集团</li>
+						<li>百货集团</li>
+						<li>利群网</li>
+						<li>利群酒店</li>
+						<li>利群房地产</li>
+						<li>利群旅行社</li>
+						<li>利群药品</li>
+						<li>利群影城</li>
+						<li>利群水站</li>
+						<li class="rolllast">利群家政</li>
+					</ul>
+					<p>鲁ICP证09054331号-2 Copyright©2004-2015 利群集团青岛电子商务有限公司 版权所有</p>
+				</div>
+				<div class="Footwar">
+					<div class="Footwarimg">
+						<img src="/static/img/tip_pic1.jpg" alt=""  style="margin-left: 0px;"/>
+						<img src="/static/img/tip_pic2.jpg" alt="" />
+						<img src="/static/img/tip_pic3.jpg" alt="" />
+						<img src="/static/img/tip_pic4.jpg" alt="" />
+					</div>
+					
+			    </div>
+			</div>    
+	</div>
+		</div>
+	</body>
+</html>

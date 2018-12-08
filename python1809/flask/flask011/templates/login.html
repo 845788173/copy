@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<form action="{{ url_for('first.login') }}"  method="post">
+    <span>用户名:</span> <input type="text" name="username" placeholder="请输入用户名"/>
+    <br>
+    <input type="submit"/>
+</form>
+
+</body>
+</html>

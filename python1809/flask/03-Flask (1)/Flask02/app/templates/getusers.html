@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li  {
+            border: 1px solid gray;
+            margin: 5px;
+            padding: 5px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<h3>用户列表</h3>
+<ul>
+    {% for user in users %}
+        <li>
+            {{ user.id }}、  用户名: {{ user.name }}   年龄:{{ user.age }}   成绩: {{ user.score }}  联系方式:{{ user.tel }}
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

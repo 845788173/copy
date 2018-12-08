@@ -1,0 +1,174 @@
+POST http://127.0.0.1:8000/posttet/?name=atom
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T112456.200.html
+
+###
+
+POST http://127.0.0.1:8000/posttet/?name=atom
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T112444.404.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=atom
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111559.500.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=atom
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111440.500.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=atom
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111437.200.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=atom
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111336.200.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111320.200.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111230.200.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111151.200.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111048.200.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111047.200.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T111028.200.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://127.0.0.1:8000/gettest/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110951.500.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110946.500.html
+
+###
+
+GET http://127.0.0.1:8000/gettest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110911.500.html
+
+###
+
+POST http://127.0.0.1:8000/requesttest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110403.200.html
+
+###
+
+POST http://127.0.0.1:8000/requesttest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110345.200.html
+
+###
+
+POST http://127.0.0.1:8000/requesttest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110324.200.html
+
+###
+
+POST http://127.0.0.1:8000/requesttest/?name=zyz
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110202.403.html
+
+###
+
+POST http://127.0.0.1:8000/requesttest/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110133.403.html
+
+###
+
+GET http://127.0.0.1:8000/requesttest/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-26T110120.200.html
+
+###
+

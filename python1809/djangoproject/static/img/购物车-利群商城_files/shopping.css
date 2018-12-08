@@ -1,0 +1,64 @@
+﻿#shopping_nav { width: 1000px; height: 32px; line-height: 32px; background-color: #F15A21; color: #fff; margin: 10px auto; }
+#shopping_nav .current { font-weight: bold; background-image: url(../images/shopping/bg.jpg); width: 167px; font-size: 14px; margin-left: 20px; }
+#shopping_nav ul li { float: left; width: 184px; font-size: 14px; }
+
+#cart_info { width: 1000px; height: auto; margin: 1px auto; border: 1px solid #F7CBBA; color: #6B6B6B; }
+#cart_info ul li { float: left; background-color: #FFFFFF; height: 78px; width: 1000px; }
+#cart_info ul li a { color: #6B6B6B; }
+#cart_info li .pic { float: left; height: 78px; width: 82px; line-height: 78px; margin-left: 40px; }
+#cart_info li .pic img { border: 1px #DEDEDE solid; width: 70px; height: 70px; margin: 0; margin-top: 3px; }
+#cart_info li .name { float: left; width: 180px; height: 50px; text-align: left; margin-left: 5px; margin-top: 28px; }
+#cart_info li .price-s { float: left; width: 114px; height: 50px; line-height: 16px; margin-top: 28px; text-align: center; }
+#cart_info li .num { float: left; width: 108px; height: 78px; text-align: center; margin-left: 5px; position: relative; }
+#cart_info .input01 { width: 40px; border: 1px solid #ccc; margin-top: 23px; height: 22px; text-align: center; }
+#cart_info li .price-all { float: left; width: 96px; height: 78px; line-height: 78px; text-align: center; }
+#cart_info li .jifen { float: left; width: 95px; height: 78px; line-height: 78px; text-align: center; }
+#cart_info li .caozuo { float: left; width: 108px; height: 78px; line-height: 78px; text-align: center; }
+#cart_info li .caozuo a { color: #D10707; text-decoration: underline; }
+#cart_info li .other { float: left; width: 165px; line-height: 20px; text-align: center; color: #D10707; }
+#cart_info .line { border-bottom: 1px solid #F6DFD6; }
+
+.buy { width: 1000px; height: 100px; margin: 0 auto; }
+.buy ul li { width: 1000px; height: 52px; float: left; }
+.buy .ask { width: 50px; height: 50px; line-height: 50px; float: left; }
+.buy .text { width: 120px; height: 50px; line-height: 50px; float: left; }
+.buy .img { width: 290px; margin-top: 10px; float: right; border: 2px solid red; overflow: hidden; text-align: left; height: 30px; border: 0px; display: inline-block; }
+.buy .img img { display: inline-block; }
+.caozuo a { color: #D10707; text-decoration: underline; }
+
+#hot_title { border-top: 1px solid #ccc; width: 1000px; height: 30px; text-align: left; line-height: 30px; }
+#query_result { width: 1000px; height: 200px; padding-top: 5px; border: 1px solid #EEEEEE; }
+#query_result li { float: left; border: 1px solid #ccc; width: 175px; height: 175px; margin: 5px; }
+
+.order_info { margin: 0 auto; width: 940px; overflow: hidden; margin-bottom: 20px; border: 1px solid #ccc; border-bottom: 3px solid #ccc; padding: 10px 30px; color: #999; text-align:left; }
+.order_info ul.title { font-weight: bold; color: #444; }
+.order_info ul.title li { font-size: 14px; }
+.order_info ul li { float: left; height: 30px; line-height: 30px; border-bottom: 1px #ccc dotted; text-align: left; }
+.order_info ul li.order { width: 200px; }
+.order_info ul li.supplier { width: 600px; }
+.order_info ul li.price { width: 140px; }
+.order_info ul li.price b { color: #ff6600; padding: 0 5px; font-size: 14px; }
+.order_info ul.title li.price { color: #444; }
+.order_info ul.order_total li { border-bottom: none; font-size: 15px; font-weight: bold; color: #444; margin-top: 10px; }
+.order_info ul.order_total li.supplier { text-align: right; padding-right: 10px; width: 590px; }
+.order_info ul.order_total li.price b { font-size: 16px; }
+
+.pay_title { position: relative; height: 43px; line-height: 43px; _zoom: 1; _margin-bottom: -2px; float: left; }
+.pay_title li { float: left; margin-right: 5px; width: 140px; cursor: pointer; text-align: center; font-size: 15px; font-weight: bold; color: #666; border: 1px solid #ccc; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom: none; position: relative; height: 42px; line-height: 42px; bottom: 0px; }
+.pay_title li.on { border: 2px solid #ec2e2e; border-bottom: none; color: #ec2e2e; background: white; height: 43px; line-height: 43px; }
+.pay_main { padding: 35px 35px 0px 35px; overflow: hidden; float: left; width: 926px; }
+.pay_main .hide { display: none; }
+.pay_interface ul { overflow: hidden; }
+.pay_interface ul li { float: left; width: 178px; height: 58px; border: 2px solid #CECECE; margin: 0 40px 20px 0; overflow: hidden; cursor: pointer; border-radius: 10px; }
+.pay_interface ul li.on { border-color: red; }
+.pay_interface ul li img { width: 178px; height: 58px; }
+.pay_bank ul { overflow: hidden; }
+.pay_bank ul li { float: left; width: 158px; height: 44px; border: 2px solid #CECECE; margin: 0 20px 20px 0; overflow: hidden; cursor: pointer; border-radius: 10px; }
+.pay_bank ul li.on { border-color: red; }
+.pay_bank ul li img { width: 158px; height: 44px; }
+.pay_btn { margin-top: 10px; clear: both; width: 1000px; text-align:right; }
+.pay_btn img { display: block; width: 140px; height: 42px; line-height: 40px; margin-right:50px; text-align:right; cursor:pointer; }
+
+
+
+

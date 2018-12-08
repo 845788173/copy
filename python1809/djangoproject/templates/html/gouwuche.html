@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/css/gouwuche.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css"/>
+    <script src="/static/js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/gouwuche.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="Nav">
+    <ul class="Navleft">
+        <li><img src="/static/img/left_star.jpg" alt=""/></li>
+        <li class="firstli"><a href="">收藏本站</a></li>
+        <li style="margin-left: 4px;">您好，欢迎来利群商城！</li>
+    </ul>
+    <ul class="Navright">
+        <li style="width: 88px;"><a href="">请</a>
+            <span style="display: block;float: right;margin-right: 10px;">
+					    <a href="../html/denglu.html" style="color: dodgerblue;">登录</a>
+					    <a href="../html/zhuce.html" style="color: dodgerblue;">注册</a>
+				    </span>
+        </li>
+        <li><img src="/static/img/mobile.jpg" style="display: block;float: left;margin-left: 10px;margin-top: -5px;"/>手机版
+        </li>
+        <li style="width: 90px;"><img src="/static/img/right_star.jpg" alt=""
+                                      style="display: block;float: left;margin-left: 10px;margin-top: -5px;"/>我的订单
+        </li>
+        <li>利群官网</li>
+        <li style="border-right: none;" class="Imgli">
+            <img src="/static/img/tdcode.jpg" alt=""/>
+            <img src="/static/img/qq.jpg" alt=""/>
+            <img src="/static/img/sina.jpg" alt=""/>
+        </li>
+    </ul>
+</div>
+<div class="Img">
+    <img src="/static/img/QQ图片20161008104834.png"/>
+</div>
+<div class="car-info">
+    <div style="text-align: left;padding: 10px;padding-left:15px;font-size: 13px;">
+        <input type="checkbox" checked="checked"/>
+        供应商：
+        <font style="color: #E03941; font-weight: bold;">利群商城</font>
+    </div>
+    <div class="tbody">
+        <table border="0" cellspacing="1" cellpadding="0" id="table"
+               style="width: 998px;background: #CCCCCC;height: 35px;font-size: 12px;">
+            <tbody>
+            <tr align="center">
+
+                <td width="310px;" height="20px;">
+                    <div class="all" isselect="false">
+                        <span class="no"></span>
+                        <b>全选</b>
+                    </div>
+                    {#                <td width="310px;" height="20px;"><span style="display: block;float: left;margin-left: 9px;" ><input#}
+                    {#                        type="checkbox" style="display: block;float: left;margin-left: 5px;" id="buton" isselect="false"/>:全选 </span>#}
+                    商品名称
+                </td>
+                <td width="115px;">商城单价</td>
+                <td width="120px;">商品数量</td>
+                <td width="95px;">小计</td>
+                <td width="90px;">积分数额</td>
+                <td width="100px;">您的可选操作</td>
+                <td width="168px;">其它说明</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="cart">
+            <ul>
+                {% for cart in carts %}
+                    <li class="goods">
+                        <div class="confirm-wrapper" cartid="{{ cart.id }}" isselect="{{ cart.isselect }}">
+                            {#                        <span class="glyphicon glyphicon-ok"></span>#}
+                            {#                        <span class="no"></span>#}
+                            {% if cart.isselect %}
+                                <span class="glyphicon glyphicon-ok"></span>
+                            {% else %}
+                                <span class="no"></span>
+                            {% endif %}
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="img">
+                                <img src="{{ cart.goods.g_img }}" alt="">
+                            </div>
+                            <div class="detail">
+                                <p class="name">
+                                    {{ cart.goods.g_concent }}
+                                </p>
+                                <p class="price" price="{{ cart.goods.g_price }}">
+                                    ￥{{ cart.goods.g_price }}
+                                </p>
+                                <p class="num" number="{{ cart.number }}">
+                                    x{{ cart.number }}
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+
+
+        </div>
+
+        <table border="0" cellspacing="1" cellpadding="0"
+               style="width: 998px;background: #CCCCCC;height: 35px;font-size: 12px;">
+            <tbody>
+            <tr>
+                <td colspan="7" height="33">
+                    <div style="float: right; line-height: 30px;margin-right: 30px;">
+                        已选择该供应商的 <span style="color: #D21D16; font-weight: bold;" id="NUM">0</span> 件商品 &nbsp;总重量：0.36kg
+                        &nbsp;总价（不含邮费）：
+                        <span style="color: #D21D16; font-weight: bold;" id="PRI">￥0.00</span>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="foor">
+    <div class="mess">
+				<span style="float: right; line-height: 35px; height: 35px; color: black; width: 310px;text-align: left;font-size: 12px;">
+					已选  <font id="check_acount" style="font-weight: bold; color: #CC0809;">0</font>&nbsp;件商品&nbsp;总价(不含运费)：
+					<font id="check_allacount" style="color: #CC0809;font-size: 20px; font-weight: bolder;">￥0.00</font>
+				</span>
+    </div>
+    <div style="width: 130px; height: 35px; overflow: hidden; float: left;">
+       <div class="bill-right" id="generateorder">
+                下单
+            </div>
+    </div>
+    <div style="width: 125px; height: 35px; overflow: hidden; float: left;">
+        <a href="">
+            <img src="/static/img/shopcart_buy_01.jpg" alt=""/>
+        </a>
+    </div>
+</div>
+<div class="FootRAM">
+    <div class="Footroll">
+        <ul class="footmin">
+            <li>关于我们</li>
+            <li>联系我们</li>
+            <li>诚聘英才</li>
+            <li>手机利群</li>
+            <li>销售联盟</li>
+            <li>友情连接</li>
+            <li>网站合作</li>
+            <li>帮助中心</li>
+            <li class="rolllast">版权说明</li>
+        </ul>
+        <ul class="footbig">
+            <li>利群集团</li>
+            <li>百货集团</li>
+            <li>利群网</li>
+            <li>利群酒店</li>
+            <li>利群房地产</li>
+            <li>利群旅行社</li>
+            <li>利群药品</li>
+            <li>利群影城</li>
+            <li>利群水站</li>
+            <li class="rolllast">利群家政</li>
+        </ul>
+        <p>鲁ICP证09054331号-2 Copyright©2004-2015 利群集团青岛电子商务有限公司 版权所有</p>
+    </div>
+
+</div>
+</body>
+</html>

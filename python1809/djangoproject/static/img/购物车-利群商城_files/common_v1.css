@@ -1,0 +1,13 @@
+*{  padding:0px; font-size:12px}
+ul,ol{list-style: none outside none;}
+img{ border:0px;}
+a{text-decoration:none;color:#686868;}
+a:hover{text-decoration:underline;color:#E93900}
+
+
+.float_left{ float:left}
+.float_right{float:right;}
+.clear_both{ clear:both; height:0px;}
+.auto_height{ height:auto;}
+.row_wrap{ width:1000px; margin:0 auto; overflow:hidden; clear: both;}
+.red_color{ color: red;}

@@ -1,0 +1,163 @@
+.car_top {
+background:url("../images/car_images/bg01.jpg");
+height:53px;
+width:986px;
+margin-top: 20px;
+}
+.car_title {
+background:url("../images/car_images/bg01_02.jpg");
+height:47px;
+width:986px;
+}
+.car_title h1{margin-top:12px; margin-left:20px; height:30px; float:left; text-align:left; font-size:16px; font-weight:bold; color:#000
+}
+.boder_bottom { border-bottom:3px solid #D4D4D4;}
+a:link, a:visited {
+    color: #666666;
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+.newclear {
+    border-top:  1px solid transparent !important;
+    border:#fff;
+    clear: both;
+    margin-top: -1px !important;
+    width:98%
+}
+
+.zp_prefence {
+    border: 0px solid;
+}
+.zp_prefence .title_zp {
+    height: 20px;
+    line-height: 20px;
+}
+.zp_prefence .title_zp img {
+    border: 0 none;
+    display: block;
+    float: left;
+}
+.zp_prefence .title_zp .ifmt_zp {
+    color: #666666;
+    height: 20px;
+    line-height: 20px;
+}
+.zp_outbox {
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 12px;
+    margin-right: 8px;
+    width: 471px;
+    display:inline;
+}
+
+.fo_font2 {
+    color: #C90C53;
+    font-size: 14px;
+    font-weight: bold;
+}
+.fo_font3 {
+    text-decoration: line-through;
+}
+.fo_font4 {
+    color: #C90C53;
+    font-weight: bold;
+}
+
+.zp_goodsbox {
+    border: 1px solid #E0E0E0;
+    position: relative;
+}
+.zp_goodsbox .zp_condition {
+    background-color: #F0F0F0;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    margin-left: 0px;
+    text-align:left;
+}
+.zp_goodsbox .goodspic_zp {
+    float: left;
+    height: 150px;
+    width: 150px;
+}
+.zp_goodsbox .goodsinfo_zp {
+    float: left;
+    width: 285px;
+    margin-top: 15px;
+}
+.zp_goodsbox .goodsinfo_zp p {
+    margin: 0;
+    text-align:left;
+}
+.zp_goodsbox .goodsinfo_zp table td {
+    color: #666666;
+    height: 25px;
+    line-height: 25px;
+    text-align:left;
+}
+.zp_goodsbox .goodsinfo_zp table td img{ float:left;}
+.zp_goodsbox .goodsinfo_zp .goods_zpinfo {
+    border-bottom: 1px solid #296396;
+    color: #296396;
+}
+.all_zp {
+    padding: 0 ;
+    width: 986px;
+    height:auto;
+    background:url("../images/car_images/bg02.jpg");
+}
+
+.zp_fail {
+    background-color: #FFFFFF;
+    border: 4px solid #AAAAAA;
+    height: 80px;
+    padding: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 320px;
+}
+.zp_fail p {
+    border-bottom: 1px solid #DDDDDD;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.zp_fail div {
+    margin-left: 60px;
+}
+.cleanall {
+    background-color: #FFFFFF;
+    border: 4px solid #AAAAAA;
+    position: absolute;
+    right: 150px;
+    top: -100px;
+    width: 250px;
+    z-index: 30;
+}
+
+/* 换购区 开始 */
+#gift_list_warp{ width: 980px;  border:0px solid red;}
+#gift_list_warp .img {width:290px; margin-top:10px; float:right;border:2px solid red;overflow: hidden; text-align: left;height: 30px;border:0px;display:inline-block}
+#gift_list_warp .gift_nav {height:20px;width:975px; font-size: 15px; font-weight: bold;  text-align: left; margin-left: 15px;}
+#gift_list_warp .gift_nav #left_tip{float: left;font-size: 15px; font-weight: bold;}
+#gift_list_warp .gift_nav #right_tip{float: right;font-size: 15px; font-weight: bold; color: red;}
+#gift_list_warp .gift_nav #right_tip a{ color: red; font-size: 15px;}
+#gift_list_warp  .gift_list{width:975px;padding:0px;margin: 0px; border:0px solid green; margin-left: 2px;  overflow:hidden;}
+
+#gift_list_warp  .gift_list .unit{float:left;width:310px; height: 145px;padding:0px;margin: 5px;border:1px solid #F7CBBA; overflow: hidden;}
+#gift_list_warp  .gift_list .unit ul{padding: 0px;margin: 0px;}
+
+
+#gift_list_warp .gift_list .unit .unit_title{ font-size: 14px; font-weight:bold; margin: 3px; border-bottom: 1px solid #F7CBBA; height: 20px; line-height: 20px; overflow: hidden;}
+#gift_list_warp .gift_list .unit ul li{ float: left; overflow: hidden;}
+#gift_list_warp .gift_list .unit .unit_content .unit_img{ float: left; width: 120px; height: 120px; border:0px solid green;}
+#gift_list_warp .gift_list .unit .unit_content .unit_info{ float: left;border:0px solid red;width: 180px; height: auto;}
+#gift_list_warp .gift_list .unit .unit_content .unit_info ul{margin: 0px; padding: 0px; width: 180px; height: 120px; border:0px solid red;margin-left: 5px; overflow:hidden;}
+#gift_list_warp .gift_list .unit .unit_content .unit_info ul li{ float: left; overflow: hidden; width: 180px; height: auto; margin-top: 5px; overflow: hidden; text-align: left;}
+/* 换购区 结束 */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    	<link rel="stylesheet" type="text/css" href="/static/css/orderinfo.css"/>
+    	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css"/>
+
+		<script src="/static/js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="/static/js/orderinfo.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="orderinfo">
+    <h3>订单号: {{ order.identifier }}</h3>
+    <ul>
+        {% for orderGoods in order.ordergoods_set.all %}
+            <li>
+                <div class="content-wrapper">
+                    <div class="img">
+                        <img src="{{ orderGoods.goods.g_img }}" alt="">
+                    </div>
+                    <div class="detail">
+                        <p class="name">
+                            {{ orderGoods.goods.g_concent }}
+                        </p>
+                        <p class="price">
+                            ￥{{ orderGoods.goods.g_price }}
+                        </p>
+                        <p class="num">
+                            x{{ orderGoods.number }}
+                        </p>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    <button class="btn btn-success" id="pay" identifier="{{ order.identifier }}">付款</button>
+</div>
+
+</body>
+</html>

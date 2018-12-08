@@ -1,0 +1,311 @@
+[
+	{
+		"id": 0,
+		"src":"img/detail/hotgoods1.jpg",
+		"bigImg": [
+			{
+				"img": "img/detail/big_01.jpg",
+				"_class":"_bigImg"
+			}
+		],
+		"smallImg": [
+			{
+				"img": "img/detail/small_01.jpg"
+			}, {
+				"img": "img/detail/small_02.jpg"
+			}, {
+				"img": "img/detail/small_03.jpg"
+			}, {
+				"img": "img/detail/small_04.jpg"
+			}
+		],
+		"msg": [
+			{
+				"tittle": "佳能 760D套机(18-135mm) 佳能EOS760D 约2400万像素,19点全十字型AF",
+				"subTittle":"【 限时抢购】",
+				"price": "5588.00",
+				"class_price":"priceNum",
+				"sale": "国庆期间火爆促销购物 满1999元减20元",
+				"gift": "img/detail/gift1.jpg",
+				"giftNum":"x1",
+				"class_num":"num",
+				"pingjiaNum":1,
+				"chengjiao":6,
+				"limit": 10,
+				"youhui":"--"
+			}
+		],
+		"colors":[
+			{
+				"info":"760D（18-135STM）套机"
+			}
+		],
+		"taocan":[
+			{
+				"tc":"官方标配",
+				"price":5588.00,
+				"exp":"以官方出厂标配为准（下面相机参数里有包装清单）不含卡包等配件，建议亲们选择套装！"
+			},
+			{
+				"tc":"套餐一",
+				"price":5738.00,
+				"exp":"官方标配+送相机包+16G高速卡+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐二",
+				"price":5778.00,
+				"exp":"官方标配+送相机包+32G高速卡+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐三",
+				"price":5878.00,
+				"exp":"官方标配+送相机包+32G高速卡+国产备用电池+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐四",
+				"price":6088.00,
+				"exp":"官方标配+送相机包+64G高速卡+原装备用电池+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			}
+		],
+		"hotGoods":[
+			{
+				
+				"img":"img/detail/hotgoods1.jpg",
+				"title":"佳能 80D套机(EF-S 18-200mm IS ) 佳能",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"8188.00",
+				"id":1
+			},
+			{
+				"id":0,
+				"img":"img/detail/hotgoods2.jpg",
+				"title":"佳能 760D套机(18-135mm) 佳能",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"5588.00"
+			},
+			{
+				"id":2,
+				"img":"img/detail/hotgoods3.jpg",
+				"title":"索尼 ILCE-5100套机(16-50mm) 索尼",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"3888.00"
+			}
+		
+		]
+	},
+	{
+		"id": 1,
+		"src":"img/detail/hotgoods2.jpg",
+		"bigImg": [
+			{
+				"img": "img/detail/big_11.jpg",
+				"_class":"_bigImg"
+			}
+		],
+		"smallImg": [
+			{
+				"img": "img/detail/small_11.jpg"
+			}, {
+				"img": "img/detail/small_12.jpg"
+			}, {
+				"img": "img/detail/small_13.jpg"
+			}, {
+				"img": "img/detail/small_14.jpg"
+			}
+		],
+		"msg": [
+			{
+				"tittle": "佳能 760D套机(18-135mm) 佳能EOS760D 约2400万像素,19点全十字型AF",
+				"subTittle":"【 限时抢购】",
+				"price": "5588.00",
+				"class_price":"priceNum",
+				"sale": "国庆期间火爆促销购物 满1999元减20元",
+				"gift": "img/detail/gift1.jpg",
+				"giftNum":"x1",
+				"class_num":"num",
+				"pingjiaNum":1,
+				"chengjiao":6,
+				"limit": 10,
+				"youhui":"--"
+			}
+		],
+		"colors":[
+			{
+				"info":"760D（18-135STM）套机"
+			}
+		],
+		"taocan":[
+			{
+				"tc":"官方标配",
+				"price":5588.00,
+				"exp":"以官方出厂标配为准（下面相机参数里有包装清单）不含卡包等配件，建议亲们选择套装！"
+			},
+			{
+				"tc":"套餐一",
+				"price":5738.00,
+				"exp":"官方标配+送相机包+16G高速卡+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐二",
+				"price":5778.00,
+				"exp":"官方标配+送相机包+32G高速卡+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐三",
+				"price":5878.00,
+				"exp":"官方标配+送相机包+32G高速卡+国产备用电池+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐四",
+				"price":6088.00,
+				"exp":"官方标配+送相机包+64G高速卡+原装备用电池+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			}
+		],
+		"hotGoods":[
+			{
+				
+				"img":"img/detail/hotgoods1.jpg",
+				"title":"佳能 80D套机(EF-S 18-200mm IS ) 佳能",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"8188.00",
+				"id":1
+			},
+			{
+				"id":0,
+				"img":"img/detail/hotgoods2.jpg",
+				"title":"佳能 760D套机(18-135mm) 佳能",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"5588.00"
+			},
+			{
+				"id":2,
+				"img":"img/detail/hotgoods3.jpg",
+				"title":"索尼 ILCE-5100套机(16-50mm) 索尼",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"3888.00"
+			}
+		
+		]
+	},
+	{
+		"id": 2,
+		"src":"img/detail/hotgoods3.jpg",
+		"bigImg": [
+			{
+				"img": "img/detail/big_21.jpg",
+				"_class":"_bigImg"
+			}
+		],
+		"smallImg": [
+			{
+				"img": "img/detail/small_21.jpg"
+			}, {
+				"img": "img/detail/small_22.jpg"
+			}, {
+				"img": "img/detail/small_23.jpg"
+			}, {
+				"img": "img/detail/small_24.jpg"
+			}
+		],
+		"msg": [
+			{
+				"tittle": "佳能 760D套机(18-135mm) 佳能EOS760D 约2400万像素,19点全十字型AF",
+				"subTittle":"【 限时抢购】",
+				"price": "5588.00",
+				"class_price":"priceNum",
+				"sale": "国庆期间火爆促销购物 满1999元减20元",
+				"gift": "img/detail/gift1.jpg",
+				"giftNum":"x1",
+				"class_num":"num",
+				"pingjiaNum":1,
+				"chengjiao":6,
+				"limit": 10,
+				"youhui":"--"
+			}
+		],
+		"colors":[
+			{
+				"info":"760D（18-135STM）套机"
+			}
+		],
+		"taocan":[
+			{
+				"tc":"官方标配",
+				"price":5588.00,
+				"exp":"以官方出厂标配为准（下面相机参数里有包装清单）不含卡包等配件，建议亲们选择套装！"
+			},
+			{
+				"tc":"套餐一",
+				"price":5738.00,
+				"exp":"官方标配+送相机包+16G高速卡+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐二",
+				"price":5778.00,
+				"exp":"官方标配+送相机包+32G高速卡+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐三",
+				"price":5878.00,
+				"exp":"官方标配+送相机包+32G高速卡+国产备用电池+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			},
+			{
+				"tc":"套餐四",
+				"price":6088.00,
+				"exp":"官方标配+送相机包+64G高速卡+原装备用电池+UV镜+高透贴膜+读卡器+清洁套装+镜头盖防丢绳"
+			}
+		],
+		"hotGoods":[
+			{
+				
+				"img":"img/detail/hotgoods1.jpg",
+				"title":"佳能 80D套机(EF-S 18-200mm IS ) 佳能",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"8188.00",
+				"id":1
+			},
+			{
+				"id":0,
+				"img":"img/detail/hotgoods2.jpg",
+				"title":"佳能 760D套机(18-135mm) 佳能",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"5588.00"
+			},
+			{
+				"id":2,
+				"img":"img/detail/hotgoods3.jpg",
+				"title":"索尼 ILCE-5100套机(16-50mm) 索尼",
+				"fuhao":"¥",
+				"class_pic":"pic",
+				"class_title":"title",
+				"price":"3888.00"
+			}
+		
+		]
+	}
+	
+]
+
+
+
+
+
+
+
+

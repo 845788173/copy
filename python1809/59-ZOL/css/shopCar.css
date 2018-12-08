@@ -1,0 +1,439 @@
+.header,.logoCourse{
+	width: 960px;
+	min-width: 960px;
+	margin: 0 auto;
+	line-height: 29px;
+	overflow: hidden;
+}
+
+.header .header_right_menu ul li div.contact{
+	margin-right: 143px;
+}
+
+.logoCourse{
+	padding: 30px 0;
+}
+
+.logoCourse a{
+	color: #134ba0;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.logoCourse a:hover{
+	color: orange;
+	text-decoration: underline;
+}
+
+.logoCourse .logo{
+	float: left;
+}
+
+.logoCourse .logo img{
+	display: block;
+	float: left;
+}
+
+.logoCourse .course{
+	float: right;
+}
+
+.logoCourse .course ul{
+	overflow: hidden;
+	background-color: #e6e6e6;
+}
+
+.logoCourse .course ul li{
+	float: left;
+	width: 90px;
+	padding: 0 14px 0 0;
+	font: 14px/36px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+	text-align: center;
+	background: url(../img/shopCar/step-bg.png) no-repeat 100% -74px;
+}
+
+.logoCourse .course ul li.s5{
+	padding: 0;
+	background:none;
+}
+
+.shopCar_content{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.shopCar_content a{
+	color: #134ba0;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.shopCar_content a:hover{
+	color: orange;
+	text-decoration: underline;
+}
+
+.shopCar_content .cart_state{
+	margin-top: 10px;
+	text-align: right;
+}
+
+.cart_state input {
+	float: right;
+	width: 58px;
+	height: 22px;
+	border: 0 none;
+	color: #fff;
+	line-height: 22px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	background: url(../img/shopCar/pic.png) no-repeat -192px -150px;
+	vertical-align: middle;
+	font-size: 100%;
+	
+}
+
+.shopCar_content .cart_state p{
+	padding: 7px 0 10px 0;
+}
+
+.shopCar_content .cart_state p em{
+	padding: 0 0 0 10px;
+	color: #666;	
+}
+.shopCar_content .cart_state .total{
+	height: 22px;
+	line-height: 22px;
+	color: #666;
+}
+
+.shopCar_content .cart_state .total span{
+	float: right;
+	padding: 0 8px 0 0;
+	line-height: 24px;
+	color: #999;
+}
+
+.shopCar_content .cart_state .total span em{
+	padding: 0 2px 0 0;
+	color: #ff0000;
+	font-weight: bold;
+	font-family: verdana;
+}
+
+.shopCar_content .cartBox{
+	margin-top: 20px;
+}
+
+.shopCar_content .cartBox ul{
+	overflow: hidden;
+}
+
+.shopCar_content .cartBox ul.th li{
+	float: left;
+	height: 36px;
+	background: #f5f5f5;
+	border-top: 2px solid #e02d2d;
+	line-height: 36px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.shopCar_content .cartBox ul.th li.th1{
+	width: 62px;
+}
+
+.shopCar_content .cartBox ul.th li.th1 input{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.shopCar_content .cartBox ul.th li.th2{
+	width: 260px;
+	padding: 0 0 0 100px;
+	text-align: left;
+}
+
+.shopCar_content .cartBox ul.th li.th3{
+	width: 122px
+}
+
+.shopCar_content .cartBox ul.th li.th4{
+	width: 106px;
+}
+
+.shopCar_content .cartBox ul.th li.th5{
+	width: 121px;
+}
+
+.shopCar_content .cartBox ul.th li.th6{
+	width: 107px;
+}
+
+.shopCar_content .cartBox ul.th li.th7{
+	width: 81px;
+}
+
+.shopCar_content .cartBox ul.cart_goods li{
+	border: 1px solid #efefef;
+}
+
+/*.shopCar_content .cartBox ul.cart_goods li.storeName{
+	height: 43px;
+	padding: 10px 0 0 0;
+	line-height: 43px;
+	border: 0;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.storeName input{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.storeName a{
+	
+}
+.shopCar_content .cartBox ul.cart_goods li.storeName span a{
+	display: inline-block;
+	margin-left: 10px;
+	width: 23px;
+	height: 22px;
+	vertical-align: middle;
+	background: url(../img/shopCar/index.png) no-repeat;
+}
+
+
+.shopCar_content .cartBox ul.cart_goods li.storeName i a{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/shopCar/pa.gif);
+	vertical-align: middle;
+	margin-right: 5px;
+}*/
+
+
+.shopCar_content .cartBox ul.cart_goods  {
+	
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox{
+	overflow: hidden;
+	position: relative;
+	margin-top: 10px; /*无店铺时*/
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .cart_goods_msg{
+	padding: 10px 10px 10px 12px;
+	width: 357px;	
+	float: left;
+}
+
+li.goodsbox .cart_goods_msg input{
+	float: left;
+	margin: 24px 10px 0 0;
+}
+
+li.goodsbox .cart_goods_msg>a{
+	float: left;
+	width: 80px;
+	height: 60px;
+	border: 1px solid #ccc;
+	line-height: 58px;
+	text-align: center;
+}
+
+li.goodsbox .cart_goods_msg>a img{
+	width: 80px;
+	height: 60px;
+}
+
+li.goodsbox .cart_goods_msg .inforbox{
+	float: left;
+    width: 240px;
+    padding: 0 0 0 10px;
+    line-height: 20px;
+    text-align: left;
+}
+
+li.goodsbox .cart_goods_msg .inforbox h3{
+	margin: -2px 0 4px 0;
+    height: 40px;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 12px;
+    /*overflow: hidden;*/
+}
+
+li.goodsbox .cart_goods_msg .inforbox p a{
+	background: url(../img/shopCar/pic.png) no-repeat 0 -286px;
+	float: left;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-right: 5px;
+}
+
+li.goodsbox .cart_goods_msg .inforbox p{
+	overflow: hidden;
+    padding-top: 5px;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .sp_price{
+	float: left;
+	width: 175px;
+	height: 100px;
+	text-align: center;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .sp_price em{
+	 position: absolute;
+	 top: 40%;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .sp_amount{
+	width: 130px;
+	padding: 10px;
+	text-align: center;
+	float: left;
+}
+
+li.goodsbox .sp_amount .buy_num{
+	width: 110px;
+    height: 20px;
+    position: absolute;
+    top:40%;
+    left: 58%;
+}
+
+li.goodsbox .sp_amount .buy_num span.jian,
+li.goodsbox .sp_amount .buy_num span.jia{
+	display: inline-block;
+	float: left;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+li.goodsbox .sp_amount .buy_num span.jian{
+	margin: 5px 8px 0 10px;
+}
+
+li.goodsbox .sp_amount .buy_num span.jia{
+	margin: 5px 0 0 8px;
+}
+
+li.goodsbox .sp_amount .buy_num input.text_amount{
+	width: 28px;
+    height: 16px;
+    float: left;
+    padding: 1px 3px;
+    text-align: right
+}
+
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .sp_youhui{
+	width: 30px;
+	float: left;
+}
+
+li.goodsbox .sp_youhui .buy_youhui{
+	width: 30px;
+    height: 20px;
+    position: absolute;
+    top:40%;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .sp_total{
+	float: left;
+	width: 100px;
+	margin-left: 90px;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .sp_total em{
+	 position: absolute;
+	 top: 40%;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .sp_del{
+	float: right;
+	width: 60px;
+	margin-right: 10px;
+}
+
+.shopCar_content .cartBox ul.cart_goods li.goodsbox .sp_del .del_box{
+	 position: absolute;
+	 top: 35%;
+	 width: 60px;
+    text-align: center
+}
+
+.shopCar_content .cartBox .total_price{
+    padding: 0 10px 0 0;
+    height: 52px;
+    line-height: 52px;
+    text-align: right;
+}
+
+.shopCar_content .cartBox .total_price span{
+    color: #666;
+}
+
+.shopCar_content .cartBox .total_price em{
+	 color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: verdana;
+}
+
+.shopCar_content .cartBox .order_foot{
+	    position: relative;
+    padding: 0 0 0 12px;
+    height: 33px;
+    border: 1px solid #e3e3e3;
+    background: ##f5f5f5;
+    line-height: 33px
+}
+
+.shopCar_content .cartBox .order_foot label{
+	    float: left;
+	    display: inline-block;
+	    width: 30px;
+    /*padding: 0 25px 0 0;*/
+}
+.shopCar_content .cartBox .order_foot input{
+	    margin: 10px 5px 0 0;
+	    float: left;
+}
+
+.shopCar_content .cartBox .order_foot a{
+    margin: 0 30px 0 10px;
+}
+
+.shopCar_content .cartBox .order_foot a.goShopping{
+	    float: none;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    margin: 0;
+    font-family: "simsun";
+}
+.shopCar_content .cartBox .order_foot input.accounting_btn{
+	position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 130px;
+    height: 35px;
+    font: 18px/35px "Microsoft YaHei";
+    color: #fff;
+    border: 0 none;
+    cursor: pointer;
+    background: url(../img/shopCar/pic.png)  0 -113px;
+}

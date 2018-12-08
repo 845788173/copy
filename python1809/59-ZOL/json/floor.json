@@ -1,0 +1,674 @@
+{
+	"groupBout": [
+
+		{
+			"url": "#",
+			"img": "img/groupBout/groupBout_1.jpg"
+		}, {
+			"url": "#",
+			"img": "img/groupBout/groupBout_2.jpg"
+		}, {
+			"url": "#",
+			"img": "img/groupBout/groupBout_3.jpg"
+		}, {
+			"url": "#",
+			"img": "img/groupBout/groupBout_4.png"
+		}
+	],
+	"banner": [
+		{
+			"url": "#",
+			"img": "img/banner/banner.jpg"
+		}
+	],
+	"banner2": [
+		{
+			"url": "#",
+			"img": "img/banner/banner2.jpg"
+		}
+	],
+	"specialBuy": [
+
+		{
+			"url": "#",
+			"img": "img/special/special_1.jpg",
+			"_class": "_leftImg"
+		}, {
+			"url": "#",
+			"img": "img/special/special_2.jpg",
+			"_class": "_first"
+		}, {
+			"url": "#",
+			"img": "img/special/special_3.jpg",
+			"_class": "_345"
+		}, {
+			"url": "#",
+			"img": "img/special/special_4.jpg",
+			"_class": "_345"
+		}, {
+			"url": "#",
+			"img": "img/special/special_5.jpg",
+			"_class": "_345"
+		}, {
+			"url": "#",
+			"img": "img/special/special_6.jpg",
+			"_class": "_first"
+		}, {
+			"url": "#",
+			"img": "img/special/special_7.jpg",
+			"_class": "_789"
+		}, {
+			"url": "#",
+			"img": "img/special/special_8.jpg",
+			"_class": "_789"
+		}, {
+			"url": "#",
+			"img": "img/special/special_9.jpg",
+			"_class": "_789"
+		}
+	],
+	"floor_oneMoblie": [
+		{
+			"big": [
+				{
+					"url": "#",
+					"img": "img/oneFloor/big.jpg"
+				}
+			]
+		}, {
+			"textImg": [
+				{
+					"id": "9",
+					"aText": "乐视 乐Max 2 全网通",
+					"pText": "限时促销  820芯片",
+					"img": "img/oneFloor/list1.jpg",
+					"bigImg": [
+						{
+							"img": "img/detail/big_91.jpg",
+							"_class": "_bigImg"
+						}
+					],
+					"smallImg": [
+						{
+							"img": "img/detail/small_91.jpg"
+						}, {
+							"img": "img/detail/small_92.jpg"
+						}, {
+							"img": "img/detail/small_93.jpg"
+						}, {
+							"img": "img/detail/small_94.jpg"
+						}
+					],
+					"msg": [
+						{
+							"tittle": "【顺丰包邮 送钢化膜】魅族 PRO 6（全网通）快速充电！2.5D弧形玻璃",
+							"subTittle": "青岛市【平度市市内】三小时送达",
+							"price": "2096.00",
+							"class_price": "priceNum",
+							"sale": "国庆期间火爆促销购物 满1999元减20元",
+							"gift": "img/detail/gift1.jpg",
+							"giftNum": "x1",
+							"class_num": "num",
+							"pingjiaNum": 0,
+							"chengjiao": 35,
+							"limit": 2,
+							"youhui": "--"
+						}
+					],
+					"colors": [
+						{
+							"info": "玫瑰金行货32GB"
+						}, {
+							"info": "星空黑行货32GB"
+						}, {
+							"info": "香槟金行货32GB"
+						}
+					],
+					"taocan": [
+						{
+							"tc": "官方标配",
+							"price": 2096.00,
+							"exp": "主机 x 1、电源适配器 x 1、保修证书 x 1、SIM卡顶针 x 1、数据线 x 1！"
+						}
+					],
+					"hotGoods": [
+						{
+							"id": 1,
+							"img": "img/detail/hotgoods1.jpg",
+							"title": "佳能 80D套机(EF-S 18-200mm IS ) 佳能",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "8188.00"
+						}, {
+							"id": 0,
+							"img": "img/detail/hotgoods2.jpg",
+							"title": "佳能 760D套机(18-135mm) 佳能",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "5588.00"
+						}, {
+							"id": 2,
+							"img": "img/detail/hotgoods3.jpg",
+							"title": "索尼 ILCE-5100套机(16-50mm) 索尼",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "3888.00"
+						}
+					]
+				}, {
+					"id": 8,
+					"aText": "魅族 PRO 6 全网通",
+					"pText": "限时低价 全新设计",
+					"img": "img/oneFloor/list2.jpg",
+					"bigImg": [
+						{
+							"img": "img/detail/big_81.jpg",
+							"_class": "_bigImg"
+						}
+					],
+					"smallImg": [
+						{
+							"img": "img/detail/small_81.jpg"
+						}, {
+							"img": "img/detail/small_82.jpg"
+						}, {
+							"img": "img/detail/small_83.jpg"
+						}, {
+							"img": "img/detail/small_84.jpg"
+						}
+					],
+					"msg": [
+						{
+							"tittle": "【顺丰包邮 送手机壳 钢化膜】乐视 乐Max 2（4GB版/全网通）",
+							"subTittle": "（平度 黄岛 李沧区）三小时送达",
+							"price": "1532.00",
+							"class_price": "priceNum",
+							"sale": "国庆期间火爆促销购物 满1999元减20元",
+							"gift": "img/detail/gift81.jpg",
+							"giftNum": "x1",
+							"class_num": "num",
+							"pingjiaNum": 13,
+							"chengjiao": 44,
+							"limit": 2,
+							"youhui": "--"
+						}
+					],
+					"colors": [
+						{
+							"info": "金色行货32GB"
+						}, {
+							"info": "金色行货64GB"
+						}
+					],
+					"taocan": [
+						{
+							"tc": "官方标配",
+							"price": 1532.00,
+							"exp": "主机×1，电源适配器×1，耳机转接头×1，数据线×1，卡针×1，三包证×1，快速入门指南×1"
+						}
+					],
+					"hotGoods": [
+						{
+							"id": 1,
+							"img": "img/detail/hotgoods1.jpg",
+							"title": "佳能 80D套机(EF-S 18-200mm IS ) 佳能",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "8188.00"
+						}, {
+							"id": 0,
+							"img": "img/detail/hotgoods2.jpg",
+							"title": "佳能 760D套机(18-135mm) 佳能",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "5588.00"
+						}, {
+							"id": 2,
+							"img": "img/detail/hotgoods3.jpg",
+							"title": "索尼 ILCE-5100套机(16-50mm) 索尼",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "3888.00"
+						}
+					]
+				}, {
+					"id": 7,
+					"aText": "360 手机N4S",
+					"pText": "4GB+64GB 仅售1449",
+					"img": "img/oneFloor/list3.jpg",
+					"bigImg": [
+						{
+							"img": "img/detail/big_71.jpg",
+							"_class": "_bigImg"
+						}
+					],
+					"smallImg": [
+						{
+							"img": "img/detail/small_71.jpg"
+						}, {
+							"img": "img/detail/small_72.jpg"
+						}, {
+							"img": "img/detail/small_73.jpg"
+						}, {
+							"img": "img/detail/small_74.jpg"
+						}
+					],
+					"msg": [
+						{
+							"tittle": "360 手机N4S（全网通） 4GB+64GB 爱科入网价 1299！！！",
+							"subTittle": "【顺丰包邮 入网赠100爱科币】",
+							"price": "1499.00",
+							"class_price": "priceNum",
+							"sale": "国庆期间火爆促销购物 满1999元减20元",
+							"gift": "img/detail/gift1.jpg",
+							"giftNum": "x1",
+							"class_num": "num",
+							"pingjiaNum": 14,
+							"chengjiao": 60,
+							"limit": 6,
+							"youhui": "300"
+						}
+					],
+					"colors": [
+						{
+							"info": "流行金行货64GB"
+						}
+					],
+					"taocan": [
+						{
+							"tc": "官方标配",
+							"price": 1499.00,
+							"exp": "主机×1，充电器×1，数据线×1，说明书×1，保修卡×1,取卡针×1"
+						}
+					],
+					"hotGoods": [
+						{
+							"id": 1,
+							"img": "img/detail/hotgoods1.jpg",
+							"title": "佳能 80D套机(EF-S 18-200mm IS ) 佳能",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "8188.00"
+						}, {
+							"id": 0,
+							"img": "img/detail/hotgoods2.jpg",
+							"title": "佳能 760D套机(18-135mm) 佳能",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "5588.00"
+						}, {
+							"id": 2,
+							"img": "img/detail/hotgoods3.jpg",
+							"title": "索尼 ILCE-5100套机(16-50mm) 索尼",
+							"fuhao": "¥",
+							"class_pic": "pic",
+							"class_title": "title",
+							"price": "3888.00"
+						}
+					]
+				}, {
+					"url": "#",
+					"aText": "酷派 cool1（全网通）",
+					"pText": "32G内存 仅售1098元！",
+					"img": "img/oneFloor/list4.jpg"
+				}, {
+					"url": "#",
+					"aText": "华为p9（全网通）",
+					"pText": "（3G+32G）直降460",
+					"img": "img/oneFloor/list5.jpg"
+				}, {
+					"url": "#",
+					"aText": "小米Max 全网通16GB",
+					"pText": "下单赠品 仅售999元！",
+					"img": "img/oneFloor/list6.jpg"
+				}
+			]
+		}, {
+			"logoImg": [
+				{
+					"url": "#",
+					"img": "img/oneFloor/smaLogo1.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo2.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo3.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo4.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo5.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo6.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo7.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo8.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo9.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/smaLogo10.jpg"
+				}
+			]
+		}
+	],
+	"floor_twoComputer": [
+		{
+			"big": [
+				{
+					"url": "#",
+					"img": "img/twoFloor/big.jpg"
+				}
+			]
+		}, {
+			"textImg": [
+
+				{
+					"url": "#",
+					"aText": "神舟 战神 K610D-i7 D2",
+					"pText": "i7处理器 尽享畅玩",
+					"img": "img/twoFloor/list1.jpg"
+				}, {
+					"url": "#",
+					"aText": "联想 G40-80影音娱乐本",
+					"pText": "强劲性能 限时抢购",
+					"img": "img/twoFloor/list2.jpg"
+				}, {
+					"url": "#",
+					"aText": "联想 710S 256G高配",
+					"pText": "时尚轻薄本 劲爆特惠",
+					"img": "img/twoFloor/list3.jpg"
+				}, {
+					"url": "#",
+					"aText": "Acer暗影骑士2",
+					"pText": "GTX960M炫薄游戏本热",
+					"img": "img/twoFloor/list4.jpg"
+				}, {
+					"url": "#",
+					"aText": "联想小新Air 12.2",
+					"pText": "特惠低价！限时抢购！",
+					"img": "img/twoFloor/list5.jpg"
+				}, {
+					"url": "#",
+					"aText": "小新700电竞版",
+					"pText": "限时直降500元",
+					"img": "img/twoFloor/list6.jpg"
+				}
+			]
+		}, {
+			"logoImg": [
+				{
+					"url": "#",
+					"img": "img/twoFloor/smaLogo1.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo2.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo3.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo4.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo5.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo6.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo7.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo8.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo9.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/smaLogo10.jpg"
+				}
+			]
+		}
+	],
+	"floor_threeDigital": [
+		{
+			"big": [
+				{
+					"url": "#",
+					"img": "img/threeFloor/big.jpg"
+				}
+			]
+		}, {
+			"textImg": [
+
+				{
+					"url": "#",
+					"aText": "神舟 战神 K610D-i7 D2",
+					"pText": "i7处理器 尽享畅玩",
+					"img": "img/threeFloor/list1.jpg"
+				}, {
+					"url": "#",
+					"aText": "联想 G40-80影音娱乐本",
+					"pText": "强劲性能 限时抢购",
+					"img": "img/threeFloor/list2.jpg"
+				}, {
+					"url": "#",
+					"aText": "联想 710S 256G高配",
+					"pText": "时尚轻薄本 劲爆特惠",
+					"img": "img/threeFloor/list3.jpg"
+				}, {
+					"url": "#",
+					"aText": "Acer暗影骑士2",
+					"pText": "GTX960M炫薄游戏本热",
+					"img": "img/threeFloor/list4.jpg"
+				}, {
+					"url": "#",
+					"aText": "联想小新Air 12.2",
+					"pText": "特惠低价！限时抢购！",
+					"img": "img/threeFloor/list5.jpg"
+				}, {
+					"url": "#",
+					"aText": "小新700电竞版",
+					"pText": "限时直降500元",
+					"img": "img/threeFloor/list6.jpg"
+				}
+			]
+		}, {
+			"logoImg": [
+				{
+					"url": "#",
+					"img": "img/threeFloor/smaLogo1.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo2.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo3.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo4.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo5.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo6.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo7.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo8.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo9.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/smaLogo10.jpg"
+				}
+			]
+		}
+	],
+	"floor_fourDiy": [
+		{
+			"big": [
+				{
+					"url": "#",
+					"img": "img/fourFloor/big.jpg"
+				}
+			]
+		}, {
+			"textImg": [
+
+				{
+					"url": "#",
+					"aText": "Intel Xeon E3-1231 v3",
+					"pText": "E3限时特惠：1587元",
+					"img": "img/fourFloor/list1.jpg"
+				}, {
+					"url": "#",
+					"aText": "热卖蚁视机饕TAW VR",
+					"pText": "3D视界震撼体验",
+					"img": "img/fourFloor/list2.jpg"
+				}, {
+					"url": "#",
+					"aText": "30迈 微躺车2016新款",
+					"pText": "新品上市微躺自行车",
+					"img": "img/fourFloor/list3.jpg"
+				}, {
+					"url": "#",
+					"aText": "能撸的实惠家用主机！",
+					"pText": "60帧玩LOL 才1699元！",
+					"img": "img/fourFloor/list4.jpg"
+				}, {
+					"url": "#",
+					"aText": "金士顿 FURY 8GB DDR4",
+					"pText": "仅售299元！",
+					"img": "img/fourFloor/list5.jpg"
+				}, {
+					"url": "#",
+					"aText": "微星主板特卖季",
+					"pText": "新品主板 价格实惠",
+					"img": "img/fourFloor/list6.jpg"
+				}
+			]
+		}, {
+			"logoImg": [
+				{
+					"url": "#",
+					"img": "img/fourFloor/smaLogo1.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo2.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo3.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo4.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo5.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo6.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo7.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo8.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo9.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/smaLogo10.jpg"
+				}
+			]
+		}
+	],
+
+	"floorImg": [
+		{
+			"oneF": [
+				{
+					"url": "#",
+					"img": "img/oneFloor/lunbo1.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/lunbo2.jpg"
+				}, {
+					"url": "#",
+					"img": "img/oneFloor/lunbo3.jpg"
+				}
+			]
+		}, {
+			"twoF": [
+				{
+					"url": "#",
+					"img": "img/twoFloor/lunbo1.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/lunbo2.jpg"
+				}, {
+					"url": "#",
+					"img": "img/twoFloor/lunbo3.jpg"
+				}
+			]
+		}, {
+			"threeF": [
+				{
+					"url": "#",
+					"img": "img/threeFloor/lunbo1.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/lunbo2.jpg"
+				}, {
+					"url": "#",
+					"img": "img/threeFloor/lunbo3.jpg"
+				}
+			]
+		}, {
+			"fourF": [
+				{
+					"url": "#",
+					"img": "img/fourFloor/lunbo1.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/lunbo2.jpg"
+				}, {
+					"url": "#",
+					"img": "img/fourFloor/lunbo3.jpg"
+				}
+			]
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+

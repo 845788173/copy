@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>Title</title>
+{#    <link rel="stylesheet" href="{% static 'css/swiper.css' %}">#}
+
+{#    <script src="{% static 'js/swiper.js' %}"></script>#}
+{#    <script src="{% static 'js/jquery.js' %}"></script>#}
+    <script src="{% static 'js/shi.js' %}"></script>
+
+
+</head>
+
+
+<body>
+{#<script src="{% static 'js/shi.js' %}"></script>#}
+
+<form>
+  <div class="form-group" class="form-group has-success">
+    <label >账号</label>
+    <input type="email" class="form-control"  placeholder="请输入6到12位数字">
+      <span id="helpBlock2" class="help-block">请输入6到12位数字</span>
+  </div>
+  <div class="form-group">
+    <label >密码</label>
+    <input type="password" class="form-control"  placeholder="密码">
+  </div>
+  <div class="form-group">
+    <label >图片</label>
+    <input type="file" >
+    <p class="help-block">上传</p>
+  </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+
+</body>
+</html>

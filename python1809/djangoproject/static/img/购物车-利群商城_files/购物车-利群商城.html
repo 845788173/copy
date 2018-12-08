@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0026)http://cart.liqunshop.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>购物车-利群商城</title>
+    
+    <script type="text/javascript" src="./购物车-利群商城_files/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="./购物车-利群商城_files/jquery.form.js"></script>
+    <link rel="Stylesheet" href="http://cart.liqunshop.com/Content/css/Site.css">
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="./购物车-利群商城_files/common.css">
+<link rel="stylesheet" type="text/css" href="./购物车-利群商城_files/common_v1.css">
+<link rel="stylesheet" type="text/css" href="./购物车-利群商城_files/head_v1_new.css">
+<link rel="stylesheet" type="text/css" href="./购物车-利群商城_files/foot_130901.css">
+<div style="background-image: url(&#39;/Content/images/bottom_line.jpg&#39;); background-repeat: repeat-x;
+    background-color: #fafafa; width: 100%; height: 24px;">
+    <div id="head_row_one" style="width: 1000px;">
+        <ul id="head_row_one_col_one">
+            <li style="margin-right: 4px;">
+                <img src="./购物车-利群商城_files/left_star.jpg"></li>
+            <li><a onclick="javascript:AddFavoriteCollection();">收藏本站</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/space_line.jpg"></li>
+            <li>您好，欢迎来利群商城！</li>
+        </ul>
+        <ul id="head_row_one_col_two">
+            <li id="head_member_info">请<span><a target="_blank" href="http://www.liqunshop.com/member/memberLogin.jsp">登录</a>/<a target="_blank" href="http://www.liqunshop.com/member/memberRegister.jsp">注册</a> </span></li>
+            <li>
+                <img src="./购物车-利群商城_files/space_line.jpg"></li>
+            <li style="margin-right: 4px;">
+                <img src="./购物车-利群商城_files/mobile.jpg"></li>
+            <li><a target="_self" href="http://www.liqunshop.com/promotion/kehuduan.jsp">手机版</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/space_line.jpg"></li>
+            <li style="margin-right: 4px;">
+                <img src="./购物车-利群商城_files/right_star.jpg"></li>
+            <li><a target="_blank" href="http://member.liqunshop.com/Member/MemberOrders">我的订单</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.eliqun.com/">利群官网</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/space_line.jpg"></li>
+            <li><span class="tdcode"><span class="tdcode_outter"><span class="tdcode_inner"><span class="arrow_outter">
+                ◆</span> <span class="arrow_inner">◆</span> <span class="arrow_pic"></span><span class="arrow_txt">
+                    微信扫描二维码，随时随地与商城亲密接触！</span> </span></span></span></li>
+            <li><a href="http://e.t.qq.com/liqunshangcheng?pref=third.baidu" target="_blank">
+                <img style="margin-top: 3px;" src="./购物车-利群商城_files/qq.jpg"></a></li>
+            <li><a href="http://e.weibo.com/eliqun" target="_blank">
+                <img style="margin-top: 3px;" src="./购物车-利群商城_files/sina.jpg"></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var timestamp = (new Date()).valueOf();
+    var url = "http://login.liqunshop.com/Home/GetLoginMemberInfo?callback=?";
+    var data = { username: timestamp };
+    $.getJSON(url, data, function (backdata) {
+        if (backdata.membername != "null") {
+            $("#head_member_info").html('');
+            $("#head_member_info").append("您好：<a href=\"http://member.liqunshop.com/Member\" target=\"_blank\">" + backdata.membername + "</a><a href=\"http://member.liqunshop.com/Member\">&nbsp;会员中心&nbsp;</a><a href=\"http://login.liqunshop.com/Home/LogOut\">&nbsp;退出&nbsp;</a>");
+            if(backdata.memberid != '')
+            {
+                document.location.href='/Member/Login?url='+document.location.href;
+                return;
+            }
+document.location.href='/Member/LogOut?url=/';        }
+        else {
+            $("#head_member_info").html('');
+            $("#head_member_info").append("请<span><a target=\"_blank\" href=\"http://www.liqunshop.com/member/memberLogin.jsp\">登录</a>/<a target=\"_blank\" href=\"http://www.liqunshop.com/member/memberRegister.jsp\">注册</a> </span>");
+        }
+    });
+    
+</script>
+    <link rel="stylesheet" type="text/css" href="./购物车-利群商城_files/shopping.css">
+<link rel="stylesheet" type="text/css" href="./购物车-利群商城_files/cart.css">
+<script type="text/javascript" src="./购物车-利群商城_files/cart.js"></script>
+<div style="width: 1000px; height: 160px; margin: 0 auto; position: relative; background: url(&#39;/content/images/shopcart_titile.jpg&#39;);">
+    <a style="position: absolute; width: 240px; height: 90px; display: block; top: 0px;
+        left: 0px;" href="http://www.liqunshop.com/" target="_blank">
+        <div style="width: 240px; height: 90px; overflow: hidden; display: block; float: left;">
+        </div>
+    </a>
+</div>
+<div id="cart_info" style="border: 0px;">
+    <div class="clear6">
+    </div>
+</div>
+<div style="width: 1000px; margin: 0 auto; height: 35px;">
+    <div style="background: url(&#39;/content/images/shopcart_bottom_01.jpg&#39;) repeat; float: left;
+        width: 743px; height: 35px; border-left: 1px solid #ccc;">
+        <span style="float: right; line-height: 35px; height: 35px; color: black; width: 310px;
+            text-align: left;">已选 &nbsp;<font id="check_acount" style="font-weight: bold; color: #CC0809;">0</font>
+            &nbsp;件商品&nbsp;&nbsp;&nbsp;&nbsp;总价(不含运费)：<font id="check_allacount" style="color: #CC0809;
+                font-size: 20px; font-weight: bolder;">￥0.00</font></span>
+        <input id="select_id" value="" type="hidden">
+    </div>
+    <div style="width: 130px; height: 35px; overflow: hidden; float: left;">
+        <a href="http://www.liqunshop.com/">
+            <img src="./购物车-利群商城_files/continue_buy.jpg" title="继续购物" alt="继续购物">
+        </a>
+    </div>
+    <div style="width: 125px; height: 35px; overflow: hidden; float: left;">
+        <a onclick="javascript:cart.goReceiver();" id="toReceiver">
+            <img src="./购物车-利群商城_files/shopcart_buy_01.jpg" title="立即结算" alt="立即结算">
+        </a>
+    </div>
+</div>
+<script language="javascript" type="text/javascript">
+    cart.chargeSum();
+</script>
+<!--加钱换购开始-->
+<div id="AddMoneyArea">
+</div>
+<!--加钱换购结束-->
+
+<!--脚部-->
+<div id="foot_row_three" class="row_wrap">
+    <div id="foot_row_three_col_one" class="row_wrap">
+        <ul class="row_wrap">
+            <li><a target="_blank" href="http://help.liqunshop.com/HelpAbout.aspx?bid=19">关于我们</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://help.liqunshop.com/contactus.aspx">联系我们</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://news.eliqun.com/news/gonggao/Index.html">诚聘英才</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_self" href="http://www2.liqunshop.com/promotion/kehuduan.jsp">手机利群</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www2.liqunshop.com/promotionPage/promotionPage.action?promotionId=426">
+                销售联盟</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://help.liqunshop.com/friendURL.aspx">友情链接</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www2.liqunshop.com/promotionPage/promotionPage.action?promotionId=427">
+                网站合作</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://help.liqunshop.com/">帮助中心</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://help.liqunshop.com/copyright.aspx">版权说明</a></li>
+        </ul>
+        <ul class="row_wrap" style="width: 760px">
+            <li><a target="_blank" href="http://www.liqungroup.com/">利群集团</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.liqundepartmentstore.com/">百货集团</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.eliqun.com/">利群网</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.eliqun.com:8080/hotel/">利群酒店</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.deyuantai.com/">利群房地产</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.ccitsqd.com/">利群旅行社</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.lqyaopin.com/">利群药品</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.eliqun.com/film/">利群影城</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.eliqun.com/water/">利群水站</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.jz96365.com/">利群家政</a></li>
+            <li>
+                <img src="./购物车-利群商城_files/foot_space_line.jpg"></li>
+            <li><a target="_blank" href="http://www.liquncard.com/">利群金卡</a></li>
+        </ul>
+        <ul id="owener" class="row_wrap">
+            <li>鲁ICP证09054331号-2 Copyright©2004-2012 利群集团青岛电子商务有限公司 版权所有
+                <script src="./购物车-利群商城_files/stat.php" type="text/javascript" language="JavaScript"></script><script src="./购物车-利群商城_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=3004884" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="./购物车-利群商城_files/pic1.gif"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div style="background-color: white;">
+    <div class="row_wrap" style="height: 20px;">
+    </div>
+</div>
+<div style=" display:none;">
+    <div id="index_right_tel" style="right: 55px; display: block; top: 276px;">
+    </div>
+    <div id="index_right_forFree" style="right: 55px; display: block; top: 336px;">
+    </div>
+    <div id="index_right_toTop" style="right: 55px; display: block; top: 423px;">
+        <a href="http://cart.liqunshop.com/#" target="_self" title="返回顶部" onclick="window.scrollTo(0, 0);return false"></a>
+    </div>
+</div>
+    <script type="text/javascript" charset="utf-8" src="./购物车-利群商城_files/10049278.js"></script><div id="doyoo_share"><iframe src="./购物车-利群商城_files/购物车-利群商城.html" id="shareWrapper"></iframe><iframe src="./购物车-利群商城_files/s.html"></iframe></div><link rel="stylesheet" type="text/css" href="./购物车-利群商城_files/talk99.css"><script type="text/javascript" src="./购物车-利群商城_files/talk99.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var looyutt;
+    $("#doyoo_panel").css("display", "none");
+    var w = window.screen.width;
+    var width = (w - 1200) / 2 - 65;
+    $("#index_right_tel").css("right", width + "px");
+    $("#index_right_forFree").css("right", width + "px");
+    $("#index_right_toTop").css("right", width + "px");
+
+    $(window).resize(function () {
+        var lwr = $(window).width();
+        width = (lwr - 1200) / 2 - 65;
+        if (lwr >= 1200) {
+            $("#index_right_tel").css("display", "block");
+            $("#index_right_forFree").css("display", "block");
+            $("#index_right_toTop").css("display", "block");
+            $("#doyoo_panel").css("display", "block");
+            $("#index_right_tel").css("right", width + "px");
+            $("#index_right_forFree").css("right", width + "px");
+            $("#index_right_toTop").css("right", width + "px");
+            $("#doyoo_panel").css("right", width + "px");
+        } else {
+            $("#index_right_tel").css("display", "none");
+            $("#index_right_forFree").css("display", "none");
+            $("#index_right_toTop").css("display", "none");
+            $("#doyoo_panel").css("display", "none");
+        }
+
+    });
+
+    $(document).ready(function () {
+        var html = "";
+        $("#doyoo_panel").click(function () {
+            var html_lq = $("#dooyoo_lq").html();
+            if (html_lq == null) {
+                $("#doyoo_panel").css("overflow", "hidden");
+                $("#doyoo_panel").css("width", "51px");
+                $("#doyoo_panel").css("height", "55px");
+                $("#doyoo_panel").css("right", width + "px");
+                html = $("#doyoo_panel").html();
+                $("#doyoo_panel").html("<div id='dooyoo_lq' style='width:51px;height:55px;'><img src='/Content/images/right_loyu.jpg' alt=''></div>");
+            } else {
+                $("#doyoo_panel").css("width", "144px");
+                $("#doyoo_panel").css("height", "364px");
+                $("#doyoo_panel").css("right", (width - 92) + "px");
+                $("#doyoo_panel").html(html);
+            }
+        });
+        looyutt = setInterval("hiddLooyu()", 500);
+    });
+    function hiddLooyu() {
+        $("#index_right_tel").css("display", "block");
+        $("#index_right_forFree").css("display", "block");
+        $("#index_right_toTop").css("display", "block");
+        if ($("#doyoo_panel").html() != "") {
+            $("#doyoo_panel").click();
+            clearInterval(looyutt);
+            $("#doyoo_panel").css("display", "block");
+            var top = $(window).scrollTop();
+            $("#index_right_tel").css("top", (top + 276) + "px");
+            $("#index_right_forFree").css("top", (top + 336) + "px");
+            $("#index_right_toTop").css("top", (top + 423) + "px");
+        }
+    }
+
+    $(function () {
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
+            $("#index_right_tel").css("top", (top + 276) + "px");
+            $("#index_right_forFree").css("top", (top + 336) + "px");
+            $("#index_right_toTop").css("top", (top + 423) + "px");
+        });
+    });
+</script>
+
+
+</body></html>

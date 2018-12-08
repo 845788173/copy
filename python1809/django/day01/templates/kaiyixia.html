@@ -1,0 +1,70 @@
+{% extends 'base_main.html' %}
+{% load static %}
+{% block extcss %}
+    <link rel="stylesheet" href="{% static 'app/market/market.css' %}">
+{% endblock %}
+
+{% block extjs %}
+    <script  src="{% static 'app/market/market.js' %}"></script>
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block header %}
+    <header>
+        <div style="width:100%;text-align: center"></div>
+    </header>
+{% endblock %}
+{% block content %}
+    <div id="market">
+        <aside>
+            <ul>
+                {% for foodtype in foodtypes %}
+
+
+
+                <li>
+                    <a href="{% url 'AXF:market_with_params' foodtype.typeid '0 '0%}">{{ foodtype.typename }}</a>
+                    {% if typeid  == foodtype.typeid %}
+                    {% endif %}
+                </li>
+
+                {% endfor %}
+            </ul>
+        </aside>
+        <nav>
+            <ul>
+                <li id="alltype">
+                    <span>
+                        <span id="all_type_icon" class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </li>
+                    <li id="allsort">
+                    <span>
+                        <span id="all_type_icon" class="glyphicon glyphicon-chevron-down"></span>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+         <section>
+             <menu>
+                 <ul>
+                     {% for goods in goods_list %}
+
+
+                     <li>
+                         <a href="#"></a>
+                         <img src="{{ goods.productimg }}" alt="">
+                         <div>
+                             <h6></h6>
+                         </div>
+                     </li>
+                     {% endfor %}
+
+                 </ul>
+             </menu>
+         </section>
+    </div>
+{% endblock %}
